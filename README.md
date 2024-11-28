@@ -43,9 +43,9 @@ Està fet amb l'intenció aprendre nous conceptes i millorar els coneguts.
 
 ⚫ Negre `#111`
 
-🔴 Vermell `#000`
+🔴 Vermell `#F00`
 
-🟡 Groc `#000`
+🟡 Groc `#FF0`
 
 ### Aspectes de pantalla
 
