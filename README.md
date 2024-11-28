@@ -1,6 +1,7 @@
 <p align="center" width="100%">
     <img width="50%" src="./img/logo.png">
 </p>
+
 # Projecte Disseny d'Interfícies Web
 ### Aspectes de pantalla
 - Width: 1850px
