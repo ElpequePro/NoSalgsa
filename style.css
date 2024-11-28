@@ -1,0 +1,513 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+/*
+https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/1223/posts/35667/image/Miscoo.jpg
+https://cdn.dribbble.com/userupload/6134126/file/still-9867ff36accd97ccc2a1e4800854ad84.png?resize=400x300&vertical=center
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+:root {
+    --gris: #3E3636;
+    --vermell: #D72323;
+    --vermell-hover: #a70b0b;
+    --vermell-fosc: #720606;
+}
+
+/* #111 --> (17, 17, 17) */
+
+body {
+    background-color: #111 !important;
+    color: white !important;
+}
+
+/* NAV */
+
+nav {
+    background-color: rgba(40, 40, 40, .5) !important;
+    backdrop-filter: blur(4px) !important;
+    display: flex !important;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    height: 78px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+
+    div:nth-child(1) {
+        display: flex;
+        align-items: center;
+    }
+
+    i {
+        height: 48px;
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 1/1;
+        cursor: pointer;
+    }
+
+    img {
+        height: 78px;
+        margin-right: -24px;
+        cursor: pointer;
+    }
+
+    ul {
+        margin: 0;
+        display: flex;
+        list-style: none;
+        height: 78px;
+
+        li {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba(24, 24, 24, .6) !important;
+            }
+
+            &.active {
+                background-color: rgba(32, 32, 32, .6);
+            }
+        }
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 48px;
+        width: 48px;
+        overflow: hidden;
+        transition: .3s;
+
+        & input {
+            flex: 1;
+            border: none;
+            border-radius: 32px;
+            height: 100%;
+            width: 48px;
+            background-color: #333333aa;
+            color: white;
+            padding: 8px 56px 8px 16px;
+            font-size: 16px;
+            opacity: 0;
+            transition: .3s;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        & i {
+            position: absolute;
+            height: 48px;
+            width: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            right: 0;
+            font-size: .9em;
+            background-color: rgba(34, 34, 34, .6);
+            border-radius: 32px;
+            transition: .3s;
+        }
+
+        &.active {
+            width: 300px;
+
+            & input {
+                opacity: 1;
+            }
+
+            & i {
+                border-radius: 0 32px 32px 0;
+            }
+        }
+    }
+
+    /*&:has(div.active) ul {
+        display: none;
+    }*/
+}
+
+/* ASIDE */
+
+aside {
+    position: fixed;
+    background-color: #222;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 32px;
+    width: 0;
+    margin-left: -20%;
+    transition: .3s;
+    overflow: hidden;
+    z-index: 9999;
+
+    h1 {
+        font-size: 3em;
+        font-weight: 200;
+    }
+
+    hr {
+        margin: 20px 0;
+    }
+
+    ul {
+        list-style: none;
+        font-size: 20px;
+        line-height: 2em;
+
+        ul {
+            margin-left: 16px;
+        }
+    }
+
+    li {
+        cursor: pointer;
+
+        &:not(&.li_tenda):hover {
+            color: var(--vermell);
+        }
+    }
+
+    i {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        font-size: 2.5em;
+        cursor: pointer;
+        height: 48px;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* MAIN */
+
+section.img {
+    background: linear-gradient(0deg, rgba(17, 17, 17, .7) 0%, rgba(51, 51, 51, .5) 100%), url('https://images.hdqwalls.com/wallpapers/god-of-war-ragnarok-valhalla-dlc-jo.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    margin-top: -78px;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 120px;
+
+    p {
+        color: var(--vermell);
+        font-weight: 700;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    div {
+        display: flex;
+        gap: 32px;
+        margin-top: 20px;
+
+        button {
+            font-size: 1.2em;
+            border-radius: 50px;
+            padding: 8px 32px;
+
+            &:nth-child(1) {
+                background: none;
+                border: 2px solid white;
+                color: white;
+
+                &:hover {
+                    background-color: var(--vermell);
+                    border: 2px solid var(--vermell);
+                }
+            }
+
+            &:nth-child(2) {
+                background: white;
+                border: none;
+                padding: 10px 32px;
+
+                &:hover {
+                    background-color: var(--vermell);
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+section.explanation {
+    height: fit-content;
+    padding: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+        margin-top: 3em;
+        font-size: 2.5em;
+    }
+
+    p {
+        margin-top: 24px;
+        font-size: 20px;
+    }
+
+    div.floating-div {
+        position: absolute;
+        display: flex;
+        background-color: #222;
+        box-shadow: 0 0 30px rgba(37, 37, 37, .8);
+        padding: 16px;
+        justify-content: space-evenly;
+        width: 60%;
+        min-width: 500px;
+        max-width: 750px;
+        top: calc(-80px - 16px*2);
+        border-radius: 20px;
+
+        i {
+            border-radius: 50%;
+            font-size: 52px;
+            aspect-ratio: 1/1;
+            display: flex;
+            width: 80px;
+            aspect-ratio: 1/1;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-size: 1em;
+            text-align: center;
+        }
+
+        div {
+            flex-direction: column;
+            gap: 8px;
+            width: 20%;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+section.side-img {
+    position: relative;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    height: 400px;
+    justify-content: space-between;
+
+    div {
+        width: 60%;
+
+        h2 {
+            font-size: 3em;
+            margin-bottom: 24px;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+    }
+
+    div:nth-child(2) {
+        height: 100%;
+        background: linear-gradient(-20deg, #111 0%, #11111150 100%), url('https://www.freeiconspng.com/uploads/call-of-duty-png-black-12.png');
+        background-position: center bottom;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 400px;
+        box-shadow: inset 0 -6em 6em -6em #111;
+    }
+
+    button {
+        border: 1px solid white;
+        padding: 12px 16px;
+        border-radius: 24px;
+        background: none;
+        color: white;
+
+        &:hover {
+            background-color: var(--vermell);
+            border: 1px solid var(--vermell);
+        }
+    }
+}
+
+section.blocks {
+    display: grid;
+    grid-template-columns: 60% 30%;
+    grid-template-rows: 13em 13em;
+    column-gap: 40px;
+    row-gap: 40px;
+    padding: 40px;
+    place-content: center;
+    margin-bottom: 20px;
+
+    div {
+        border-radius: 12px;
+        transition: .3s;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        &:nth-child(1) {
+            background-image: linear-gradient(0deg, #111111dd 0%, #11111150 100%), url('https://i.ytimg.com/vi/9-EgvyLRYo4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAmSaNnJ9OXjNMOhlv_hrouzeDL-A');
+            background-size: cover;
+            background-position: center center;
+        }
+
+        &:nth-child(2) {
+            background-image: linear-gradient(0deg, #111111dd 0%, #11111150 100%), url('https://i.ytimg.com/vi/s1AyjcYAxPg/maxresdefault.jpg');
+            background-size: cover;
+            background-position: center center;
+        }
+
+        &:nth-child(3) {
+            background-image: linear-gradient(0deg, #111111dd 0%, #11111150 100%), url('https://i.pinimg.com/originals/54/6b/a2/546ba29fb6559d4bcd9fbeabada9d9ce.jpg');
+            background-size: cover;
+            background-position: center center;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #0a0a0a;
+
+    .main-div {
+        display: flex;
+        padding: 20px 20px 0 20px;
+
+        div {
+            display: flex;
+        }
+
+        div.left {
+            flex-direction: column;
+            width: 50%;
+            padding: 20px;
+
+            div {
+                flex-direction: column;
+            }
+        }
+
+        ul {
+            list-style: none;
+            font-size: 1.2em;
+            line-height: 2em;
+
+            li {
+                cursor: pointer;
+                width: fit-content;
+
+                &:hover {
+                    color: var(--vermell);
+                }
+            }
+        }
+
+        div.right {
+            flex-direction: column;
+            width: 50%;
+            padding: 20px;
+
+            div {
+                display: flex;
+                position: relative;
+                height: 48px;
+                border-radius: 24px;
+
+                input {
+                    flex: 1;
+                    border-radius: 24px;
+                    border: none;
+                    padding: 12px 60px 12px 16px;
+                    width: 100%;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                i {
+                    position: absolute;
+                    background-color: var(--vermell);
+                    right: 0;
+                    height: 100%;
+                    width: 52px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 0 24px 24px 0;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: var(--vermell-hover);
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        padding: 12px 24px;
+    }
+}
+
+/* GENERAL */
+
+h2 {
+    color: var(--vermell);
+}
+
+/* ALTRES */
+
+/* MEDIA */
+
+/* ANIMACIONS */
