@@ -31,11 +31,11 @@ Està fet amb l'intenció aprendre nous conceptes i millorar els coneguts.
 
 ### Contacte
 
-
+📞 Formulari de contacte amb l'empresa.
 
 ### Sobre Nosaltres
 
-
+📑 Informació de l'empresa, tant així, com dels empleats.
 
 ## Estils
 
