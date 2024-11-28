@@ -5,7 +5,11 @@ Aquest és un projecte fet a les assignatures `Disseny d'Interfícies Web` i `Ll
 
 ## Algo 
 
-### index.html [Link Text]('https://github.com/akinfenwa69/NoSalgsa/blob/main/index.html')
+### Home
+### Producte
+### Categories
+### Contacte
+### Sobre Nosaltres
 
 ## Estils
 
