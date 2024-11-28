@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-    <img width="33%" src="./img/logo.png">
+    <img width="50%" src="./img/logo.png">
 </p>
 
 # Projecte Disseny d'Interfícies Web
