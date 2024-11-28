@@ -45,7 +45,7 @@ Vermell `#0969DA`
 
 ### Aspectes de pantalla
 
-Les mides de la pantalla de classe són les següents:
+📺 Les mides de la pantalla de classe són les següents:
 
 ```
 aspect-ratio: 1850 / 939;
