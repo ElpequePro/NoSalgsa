@@ -3,20 +3,36 @@
 
 Aquest és un projecte fet a les assignatures `Disseny d'Interfícies Web` i `Llenguatge de Marques i Sistemes de Gestió d'Informació`.
 
-## Algo 
+## Pàgines 
 
 ### Home
+
+
+
 ### Producte
+
+
+
 ### Categories
+
+
+
 ### Contacte
+
+
+
 ### Sobre Nosaltres
+
+
 
 ## Estils
 
 ### Colors
+
 Vermell `#0969DA`
 
 ### Aspectes de pantalla
+
 - Width: 1850px  
 - Height: 939px
 
