@@ -41,7 +41,9 @@ Està fet amb l'intenció aprendre nous conceptes i millorar els coneguts.
 
 ### Colors
 
-Vermell `#0969DA`
+⚫ Negre `#111`
+🔴 Vermell `#000`
+🟡 Groc `#000`
 
 ### Aspectes de pantalla
 
