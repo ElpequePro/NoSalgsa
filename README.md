@@ -3,7 +3,13 @@
 
 Aquest és un projecte fet a les assignatures `Disseny d'Interfícies Web` i `Llenguatge de Marques i Sistemes de Gestió d'Informació`.
 
-## Colors
+## Algo 
+
+### index.html [GitHub Pages]('https://github.com/akinfenwa69/NoSalgsa/blob/main/index.html')
+
+## Estils
+
+### Colors
 Vermell `#0969DA`
 
 ### Aspectes de pantalla
