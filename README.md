@@ -1,4 +1,9 @@
-![logo](./img/logo.png)
+<!-- ![logo](./img/logo.png) -->
+
+<p align='center'>
+  <img width='50%' src='./img/logo.png'>
+</p>
+
 # Projecte Disseny d'Interfícies Web
 
 Aquest és un projecte fet a les assignatures `Disseny d'Interfícies Web` i `Llenguatge de Marques i Sistemes de Gestió d'Informació`.
