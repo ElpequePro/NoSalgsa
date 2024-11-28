@@ -1,4 +1,7 @@
-![logo](./img/logo.png)
+<p align="center" width="100%">
+    <img width="33%" src="./img/logo.png">
+</p>
+
 # Projecte Disseny d'Interfícies Web
 
 ### Aspectes de pantalla
