@@ -2,7 +2,7 @@
 # Projecte Disseny d'Interfícies Web
 
 ## Colors
-Vermell `#f09`
+Vermell `#0969DA`
 
 ### Aspectes de pantalla
 - Width: 1850px  
