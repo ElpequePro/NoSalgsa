@@ -18,7 +18,10 @@ Està fet amb l'intenció aprendre nous conceptes i millorar els coneguts.
 
 ### Producte
 
+Hola
 
+> [!WARNING]
+> Por ser que la pàgina tardi en cargar-se degut al processament d'imatges
 
 ### Categories
 
@@ -38,7 +41,7 @@ Està fet amb l'intenció aprendre nous conceptes i millorar els coneguts.
 
 Vermell `#0969DA`
 
-### Aspectes de pantalla
+### Aspectes de pantalla (PC classe)
 
 - Width: 1850px  
 - Height: 939px
