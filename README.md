@@ -18,9 +18,9 @@ Està fet amb l'intenció aprendre nous conceptes i millorar els coneguts.
 
 ### Productes
 
-🔀 És on hi haurà els blocs d'imatges dels productes amb un filtrat de **gènere** i **any de llançament**.
+🔀  És on hi haurà els blocs d'imatges dels productes amb un filtrat de **gènere** i **any de llançament**.
 
-📖 Quan es cliqui a un dels blocs, aquest augmentarà de tamany i canviarà la portada del joc per una descripció treta de la _Wikipedia_.
+📖  Quan es cliqui a un dels blocs, aquest augmentarà de tamany i canviarà la portada del joc per una descripció treta de la _Wikipedia_.
 
 > [!WARNING]
 > Por ser que la pàgina tardi en cargar-se degut al processament d'imatges
