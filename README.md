@@ -7,4 +7,4 @@
     <li>Width: 1850px</li>  
     <li>Height: 939px</li>
 </ul>
-Copyright &copy; 2024 - No Salgo de Casa "NoSalgsa" fet per Pol Poblet Pallisé
+<p>Copyright &copy; 2024 - No Salgo de Casa "NoSalgsa" fet per Pol Poblet Pallisé</p>
