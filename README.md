@@ -45,7 +45,9 @@ Vermell `#0969DA`
 
 ### Aspectes de pantalla (PC classe)
 
-```aspect-ratio: 1850 / 939;```
+```
+aspect-ratio: 1850 / 939;
+```
 
 > Copyright &copy; 2024 - No Salgo de Casa "NoSalgsa" fet per Pol Poblet Pallisé
 
