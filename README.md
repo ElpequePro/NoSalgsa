@@ -1,6 +1,8 @@
 ![logo](./img/logo.png)
 # Projecte Disseny d'Interfícies Web
 
+Aquest és un projecte fet a les assignatures `Disseny d'Interfícies Web` i `Llenguatge de marques`.
+
 ## Colors
 Vermell `#0969DA`
 
