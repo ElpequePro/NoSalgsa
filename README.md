@@ -43,7 +43,9 @@ Està fet amb l'intenció aprendre nous conceptes i millorar els coneguts.
 
 Vermell `#0969DA`
 
-### Aspectes de pantalla (PC classe)
+### Aspectes de pantalla
+
+Les mides de la pantalla de classe són les següents:
 
 ```
 aspect-ratio: 1850 / 939;
