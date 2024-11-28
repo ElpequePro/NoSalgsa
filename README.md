@@ -1,5 +1,9 @@
 ![logo](./img/logo.png)
 # Projecte Disseny d'Interfícies Web
+
+## Colors
+Vermell `#f09`
+
 ### Aspectes de pantalla
 - Width: 1850px  
 - Height: 939px
