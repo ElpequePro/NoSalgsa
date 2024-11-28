@@ -45,4 +45,12 @@ Vermell `#0969DA`
 
 > Copyright &copy; 2024 - No Salgo de Casa "NoSalgsa" fet per Pol Poblet Pallisé
 
-<!-- https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxDOf7brh465mFOOj8hI1V2W7vb0y8pmPh0p4pIsfrLFSoBfwZ9YaRt4hznIZUHf2MR44&usqp=CAU -->
+<!--
+
+Img:
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxDOf7brh465mFOOj8hI1V2W7vb0y8pmPh0p4pIsfrLFSoBfwZ9YaRt4hznIZUHf2MR44&usqp=CAU
+
+Syntaxi:
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
+-->
