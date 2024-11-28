@@ -5,7 +5,7 @@ Aquest és un projecte fet a les assignatures `Disseny d'Interfícies Web` i `Ll
 
 ## Algo 
 
-### index.html [GitHub Pages]('https://github.com/akinfenwa69/NoSalgsa/blob/main/index.html')
+### index.html [Link Text]('https://github.com/akinfenwa69/NoSalgsa/blob/main/index.html')
 
 ## Estils
 
