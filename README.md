@@ -6,7 +6,7 @@
 
 # Projecte Disseny d'Interfícies Web
 
-Aquest és un projecte fet a les assignatures `Disseny d'Interfícies Web` i `Llenguatge de Marques i Sistemes de Gestió d'Informació`.
+Aquest és un projecte fet a les assignatures **Disseny d'Interfícies Web** i **Llenguatge de Marques i Sistemes de Gestió d'Informació**.
 
 Està fet amb l'intenció aprendre nous conceptes i millorar els coneguts.
 
