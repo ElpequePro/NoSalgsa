@@ -6,7 +6,7 @@
 
 # Projecte Disseny d'Interfícies Web
 
-![HTML](https://img.shields.io/badge/HTML)
+[![HTML](badge)](https://img.shields.io/badge/HTML)
 <!--
 ![CSS](https://img.shields.io/badge/CSS)
 
