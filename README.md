@@ -59,6 +59,12 @@ Està separat en 4 apartats:
 aspect-ratio: 1850 / 939;
 ```
 
+## Script
+
+### Menus
+
+Hi ha un script per la barra de navegació lateral (☰).
+
 > Copyright &copy; 2024 - No Salgo de Casa "NoSalgsa" fet per Pol Poblet Pallisé
 
 <!--
