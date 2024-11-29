@@ -79,6 +79,8 @@ Per finalitzar, el filtre tindrà dos script: filtrat per classificar els produc
 
 Només hi ha un script pel canvi d'apartats.
 
+<br>
+
 > Copyright &copy; 2024 - No Salgo de Casa "NoSalgsa" fet per Pol Poblet Pallisé
 
 <!--
