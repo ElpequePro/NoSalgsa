@@ -51,6 +51,10 @@ Està separat en 4 apartats:
 
 🟡 Groc `#FF0`
 
+### Bootstrap
+
+⚙️ El Bootstrap només s'ha utilitzat per afegir certes icones.
+
 ### Aspectes de pantalla
 
 📺 Les mides de la pantalla de classe són les següents:
