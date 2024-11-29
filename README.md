@@ -6,7 +6,7 @@
 
 # Projecte Disseny d'Interfícies Web
 
-![Build Status](https://img.shields.io/badge/any_text-you_like-blue)
+![Build Status](https://img.shields.io/badge/percentatge-80%)
 
 Aquest és un projecte fet a les assignatures **Disseny d'Interfícies Web** i **Llenguatge de Marques i Sistemes de Gestió d'Informació**.
 
