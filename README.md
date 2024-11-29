@@ -6,7 +6,7 @@
 
 # Projecte Disseny d'Interfícies Web
 
-![HTML](https://img.shields.io/badge/HTML)
+![Percentatge](https://img.shields.io/badge/Completat-80%)
 <!--
 ![CSS](https://img.shields.io/badge/CSS)
 
