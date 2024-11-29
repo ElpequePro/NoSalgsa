@@ -6,11 +6,11 @@
 
 # Projecte Disseny d'Interfícies Web
 
-![HTML](https://img.shields.io/badge/any_text-you_like-blue)
-[![CSS](badge)]()
-[![JS](badge)]()
-[![BootStrap](badge)]()
-<!-- [![PHP](badge)]() -->
+![HTML](https://img.shields.io/badge/HTML)
+![CSS](https://img.shields.io/badge/CSS)
+![JS](https://img.shields.io/badge/JavaScript)
+![BootStrap](https://img.shields.io/badge/BootStrap)
+<!-- ![PHP]() -->
 
 Aquest és un projecte fet a les assignatures **Disseny d'Interfícies Web** i **Llenguatge de Marques i Sistemes de Gestió d'Informació**.
 
