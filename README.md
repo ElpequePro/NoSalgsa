@@ -6,8 +6,7 @@
 
 # Projecte Disseny d'Interfícies Web
 
-
-[![HTML](badge)](https://img.shields.io/badge/any_text-you_like-blue)
+![HTML](https://img.shields.io/badge/any_text-you_like-blue)
 [![CSS](badge)]()
 [![JS](badge)]()
 [![BootStrap](badge)]()
