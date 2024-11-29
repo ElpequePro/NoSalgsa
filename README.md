@@ -75,6 +75,10 @@ S'ha fet un llistat de videojocs amb els següents paràmetres: `src` (url), `na
 
 Per finalitzar, el filtre tindrà dos script: filtrat per classificar els productes per gènere i any, i amagar i desplegar el bloc quan la pantalla arriba certa mida.
 
+### Categories
+
+Només hi ha un script pel canvi d'apartats.
+
 > Copyright &copy; 2024 - No Salgo de Casa "NoSalgsa" fet per Pol Poblet Pallisé
 
 <!--
