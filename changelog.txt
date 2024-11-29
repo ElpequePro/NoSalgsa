@@ -40,6 +40,8 @@ Dimarts 19 de Novembre de 2024
         Afegir paràmetres perquè s'adapti a la nova pàgina
 
 Dimecres 20 de Novembre de 2024
+    Crear la carpeta "info"
+        Crear els arxius relacionats amb "Sobre Nosaltres"
 
 Dijous 21 de Novembre de 2024
 
@@ -50,15 +52,7 @@ ENTREGA
 -------
 
 Divendres 22 de Novembre 2024
-
-
-Dilluns 25 de Novembre de 2024
-    Modificar "categories.html"
-        Afegir l'apartat "Descomptes"
-
-Dilluns 25 de Novembre de 2024
-    Modificar "categories.html"
-        Afegir l'apartat "Descomptes"
+    Investigar com fer l'script de búsqueda
 
 Dilluns 25 de Novembre de 2024
     Modificar "categories.html"
@@ -77,3 +71,10 @@ Dimecres 27 de Novembre de 2024
 Dijous 28 de Novembre de 2024
     Afegir contingut al "README.md"
     Exportar arxius a GitHub
+    Creació d'un Kanban
+
+Divendres 29 de Novembre de 2024
+    Afegir més contingut al "README.md" amb decoració (icones)
+    Modificació del Kanban
+    Crear els arxius relacionats amb "Contacte" a "info"
+    Acabar de posar imatges a l'apartat "Descomptes" de "Categories"
