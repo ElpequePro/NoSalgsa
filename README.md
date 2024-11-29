@@ -6,7 +6,7 @@
 
 # Projecte Disseny d'Interfícies Web
 
-![Build Status](https://img.shields.io/badge/Completat-80%)
+[![Build Status](https://img.shields.io/badge/Completat-80%)]()
 
 Aquest és un projecte fet a les assignatures **Disseny d'Interfícies Web** i **Llenguatge de Marques i Sistemes de Gestió d'Informació**.
 
