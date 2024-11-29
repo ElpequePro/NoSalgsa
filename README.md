@@ -8,7 +8,7 @@
 
 ![HTML](https://img.shields.io/badge/HTML)
 ![CSS](https://img.shields.io/badge/CSS)
-![JS](https://img.shields.io/badge/JavaScript)
+![JavaScript](https://img.shields.io/badge/JavaScript)
 ![BootStrap](https://img.shields.io/badge/BootStrap)
 <!-- ![PHP]() -->
 
