@@ -28,10 +28,10 @@ Està fet amb l'intenció aprendre nous conceptes i millorar els coneguts.
 ### Categories
 
 Està separat en 4 apartats:
-- Novetats
-- Col·leccions
-- Descomptes
-- Subscripcions
+  ⭐ Novetats
+  📂 Col·leccions
+  🏷️ Descomptes
+  💸 Subscripcions
 
 ### Contacte
 
