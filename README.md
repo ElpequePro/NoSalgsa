@@ -69,6 +69,10 @@ aspect-ratio: 1850 / 939;
 
 Hi ha un script per la barra de navegació lateral (☰).
 
+### Productes
+
+S'ha fet un llistat de videojocs amb els següents paràmetres: `src` (url), `name`, `description`, `color`, `genere` i `any`. 
+
 > Copyright &copy; 2024 - No Salgo de Casa "NoSalgsa" fet per Pol Poblet Pallisé
 
 <!--
