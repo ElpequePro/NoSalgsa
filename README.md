@@ -7,7 +7,7 @@
 # Projecte Disseny d'Interfícies Web
 
 ![HTML](https://img.shields.io/badge/HTML)
-
+<!--
 ![CSS](https://img.shields.io/badge/CSS)
 
 ![JavaScript](https://img.shields.io/badge/JavaScript)
