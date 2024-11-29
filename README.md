@@ -6,15 +6,7 @@
 
 # Projecte Disseny d'Interfícies Web
 
-![Percentatge](https://img.shields.io/badge/Completat-80%)
-<!--
-![CSS](https://img.shields.io/badge/CSS)
-
-![JavaScript](https://img.shields.io/badge/JavaScript)
-
-![BootStrap](https://img.shields.io/badge/BootStrap)
-
-<!-- ![PHP]() -->
+![Build Status](https://img.shields.io/badge/Completat-80%)
 
 Aquest és un projecte fet a les assignatures **Disseny d'Interfícies Web** i **Llenguatge de Marques i Sistemes de Gestió d'Informació**.
 
