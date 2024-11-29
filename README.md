@@ -71,7 +71,9 @@ Hi ha un script per la barra de navegació lateral (☰).
 
 ### Productes
 
-S'ha fet un llistat de videojocs amb els següents paràmetres: `src` (url), `name`, `description`, `color`, `genere` i `any`. 
+S'ha fet un llistat de videojocs amb els següents paràmetres: `src` (url), `name`, `description`, `color`, `genere` i `any`. Juntament amb aquest, també hi ha un script que crea els objectes i els afegeix al document. 
+
+Per finalitzar, el filtre tindrà dos script: filtrat per classificar els productes per gènere i any, i amagar i desplegar el bloc quan la pantalla arriba certa mida.
 
 > Copyright &copy; 2024 - No Salgo de Casa "NoSalgsa" fet per Pol Poblet Pallisé
 
