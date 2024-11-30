@@ -32,12 +32,19 @@ Està fet amb l'intenció aprendre nous conceptes i millorar els coneguts.
 
 Està separat en 4 apartats:
 
+<!--
 <ul style='line-height: 2em;'>
 <li style='list-style: "⭐"; padding-left: 12px;'>Novetats</li>
 <li style='list-style: "📂"; padding-left: 12px;'>Col·leccions</li>
 <li style='list-style: "🏷️"; padding-left: 12px;'>Descomptes</li>
 <li style='list-style: "💸"; padding-left: 12px;'>Subscripcions</li>
 </ul>
+-->
+
+- ⭐ Novetats
+- 📂 Col·leccions
+- 🏷️ Descomptes
+- 💸 Subscripcions
 
 ### Contacte
 
@@ -68,7 +75,7 @@ Està separat en 4 apartats:
 ```
 aspect-ratio: 1850 / 939;
 ```
-
+z
 ## Script
 
 ### Menus
