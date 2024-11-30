@@ -75,7 +75,7 @@ Està separat en 4 apartats:
 ```
 aspect-ratio: 1850 / 939;
 ```
-z
+
 ## Script
 
 ### Menus
