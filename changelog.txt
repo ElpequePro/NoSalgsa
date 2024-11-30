@@ -82,3 +82,6 @@ Divendres 29 de Novembre de 2024
 
 Dissabte 30 de Novembre de 2024
     Modificar "contacte.php"
+    Canvis menors en totes les pàgines
+    Eliminació de "contacte.php"
+    Experiment en "contacte.js" per enviar el formulari per correu sense PHP
