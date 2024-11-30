@@ -44,6 +44,7 @@ Dimecres 20 de Novembre de 2024
         Crear els arxius relacionats amb "Sobre Nosaltres"
 
 Dijous 21 de Novembre de 2024
+    Començar a fer el filtrat a "Productes"
 
 -------
 
@@ -78,3 +79,6 @@ Divendres 29 de Novembre de 2024
     Modificació del Kanban
     Crear els arxius relacionats amb "Contacte" a "info"
     Acabar de posar imatges a l'apartat "Descomptes" de "Categories"
+
+Dissabte 30 de Novembre de 2024
+    Modificar "contacte.php"
