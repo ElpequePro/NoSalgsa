@@ -68,7 +68,7 @@
                     <li><span class="material-symbols-outlined">chat</span>Parla amb nosaltres</li>
                 </ul>
             </div>
-            <form action="contacte.php" method="post">
+            <form action="">
                 <div>
                     <input type="text" name="nom" id="nom" placeholder="*Nom" required>
                     <input type="text" name="cognom" id="cognom" placeholder="*Cognom/s" required>
@@ -85,7 +85,7 @@
                 </select>
                 <input type="number" name="comanda" id="comanda" placeholder="Número de la comanda (opcional)">
                 <textarea placeholder="*Missatge" name="missatge" id="missatge" required></textarea>
-                <input type="submit" value="SUBMIT">
+                <input type="submit" value="SUBMIT" onclick="mailto()">
                 <input type="reset" value="reset">
             </form>
         </section>
@@ -129,6 +129,7 @@
     </footer>
 
     <script src="../script.js"></script>
+    <script src="contacte.js"></script>
 </body>
 
 </html>
