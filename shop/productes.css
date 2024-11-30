@@ -55,7 +55,7 @@ nav {
 
     img {
         height: 78px;
-        margin-right: 8px;
+        margin-right: -24px;
         cursor: pointer;
     }
 
@@ -601,7 +601,6 @@ footer {
         padding: 12px 24px;
     }
 }
-
 
 /* GENERAL */
 
