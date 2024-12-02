@@ -97,5 +97,5 @@ ENTREGA
 
 Dilluns 2 de Decembre de 2024
     Afegir "media screen" a les altres pàgines
-        Revisió que el format sigui correcte des de mòvil
+        Revisió que el format sigui correcte des de mòbil
     Acabar la búsqueda del "search-input"
