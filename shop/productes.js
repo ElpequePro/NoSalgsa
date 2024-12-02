@@ -62,7 +62,7 @@ jocs = {
         src: "https://upload.wikimedia.org/wikipedia/en/b/b5/MarioKart8Boxart.jpg",
         name: "Mario Kart 8",
         description: "Mario Kart 8 és un joc de carreres de karts del 2014 desenvolupat i publicat per Nintendo per a Wii U. Conserva la jugabilitat dels jocs anteriors de Mario Kart, amb els jugadors controlant un personatge de Mario en curses per pistes. Les pistes estan temàtiques al voltant de llocs de la sèrie Super Mario poblats amb potenciadors que ajuden els jugadors a obtenir avantatges en les curses. Es poden seleccionar diferents dificultats abans d'una carrera; dificultats més difícils fan que el joc sigui més ràpid. En les noves seqüències anti-gravetat, els jugadors condueixen per parets i sostres. Mario Kart 8 conté una varietat de modes de joc per a un sol jugador i locals i multijugador en línia, incloses les carreres Gran Premi i els modes de batalla basats en l'arena.",
-        color: "a",
+        color: "blue",
         genere: "esports",
         any: 2014
     },
@@ -198,7 +198,7 @@ jocs = {
         src: "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Resident_Evil_2_Remake.jpg/220px-Resident_Evil_2_Remake.jpg",
         name: "Resident Evil 2 Remake",
         description: "Resident Evil 2 és un joc de terror de supervivència del 2019 desenvolupat i publicat per Capcom. Un remake del joc Resident Evil 2 de 1998, es va llançar per a PlayStation 4, Windows i Xbox One el gener de 2019 i per a Amazon Luna, PlayStation 5, Xbox Series X/S i Nintendo Switch el 2022. Versions per a iOS, iPadOS, i macOS estan programats per ser llançats el desembre de 2024. Els jugadors controlen l'oficial de policia novell Leon S. Kennedy i l'estudiant universitària Claire Redfield mentre intenten escapar de Raccoon City durant un brot de zombis.",
-        color: "a",
+        color: "red",
         genere: "terror",
         any: 2019
     },
@@ -257,6 +257,14 @@ jocs = {
         color: "yellow",
         genere: "estrategia",
         any: 2012
+    },
+    29: {
+        src: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8ccd11b3-da82-40c6-a648-7ff3d4b1e1a1/dfp2v2b-07ab7caf-8421-4607-b715-69af2eded2e3.jpg/v1/fill/w_1280,h_1811,q_75,strp/pokedex___pokemon_go_cover_by_lporter1986_dfp2v2b-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTgxMSIsInBhdGgiOiJcL2ZcLzhjY2QxMWIzLWRhODItNDBjNi1hNjQ4LTdmZjNkNGIxZTFhMVwvZGZwMnYyYi0wN2FiN2NhZi04NDIxLTQ2MDctYjcxNS02OWFmMmVkZWQyZTMuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.1drflOUfR-hx2tupPKE5Bi93hTYMTd6BDpDn3pnoUqc",
+        name: "Pokémon Go",
+        description: "Pokémon Go (estilitzat com Pokémon GO) és un joc mòbil de realitat augmentada (RA) del 2016, que forma part de la franquícia Pokémon, desenvolupat i publicat per Niantic en col·laboració amb Nintendo i The Pokémon Company per a dispositius iOS i Android. Utilitza dispositius mòbils amb GPS per localitzar, capturar, entrenar i lluitar contra Pokémon virtuals, que semblen com si estiguessin a la ubicació real del jugador. El joc és gratuït; utilitza un model de negoci freemium combinat amb publicitat local i admet compres des de l'aplicació per a articles addicionals dins del joc. El joc es va llançar amb unes 150 espècies de Pokémon, que havien augmentat a unes 870 a finals de 2024.",
+        color: "blue",
+        genere: "aventura",
+        any: 2016
     }
 
     /*plantilla: {
@@ -269,7 +277,7 @@ jocs = {
     }*/
 }
 
-num_jocs = 29; // Últim número +1
+num_jocs = 30; // Últim número +1
 
 function addGames() {
     list = document.getElementById('product_list');
