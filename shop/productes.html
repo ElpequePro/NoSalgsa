@@ -127,6 +127,84 @@
             </div>
             <input type="reset" value="Reset" onclick="resetFilter()">
         </form>
+        <form class="floating-div-mobile" id="form_mobile">
+            <span class="cross material-symbols-outlined" id="cross_floating_filter_mobile"
+                onclick="floatingFilter('hide')">close</span>
+            <div class="genere">
+                <h2>Gènere</h2>
+                <div>
+                    <input type="checkbox" name="genere" id="accio_mobile" onchange="filter('accio')" checked>
+                    <span class="material-symbols-outlined"></span>
+                    <label for="accio">Acció</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="genere" id="aventura_mobile" onchange="filter('aventura')" checked>
+                    <span></span>
+                    <label for="aventura">Aventura</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="genere" id="rpg_mobile" onchange="filter('rpg')" checked>
+                    <span></span>
+                    <label for="rpg">RPG</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="genere" id="terror_mobile" onchange="filter('terror')" checked>
+                    <span></span>
+                    <label for="terror">Terror</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="genere" id="fantasia_mobile" onchange="filter('fantasia')" checked>
+                    <span></span>
+                    <label for="fantasia">Fantasia</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="genere" id="puzzle_mobile" onchange="filter('puzzle')" checked>
+                    <span></span>
+                    <label for="puzzle">Puzzle</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="genere" id="esports_mobile" onchange="filter('esports')" checked>
+                    <span></span>
+                    <label for="esports">Esports</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="genere" id="estrategia_mobile" onchange="filter('estrategia')" checked>
+                    <span></span>
+                    <label for="estrategia">Estrategia</label>
+                </div>
+            </div>
+            <div class="any">
+                <h2>Any de llençament</h2>
+                <div class="rang">
+                    <div>
+                        <input type="radio" name="any_mobile" id="rang_mobile" checked>
+                        <span></span>
+                        <label for="rang_mobile">Rang d'anys</label>
+                    </div>
+                    <div class="ranges">
+                        <input type="number" name="rang_min_mobile" id="range_min_number_mobile" min="1950" max="2024"
+                            value="1950" oninput="document.getElementById('range_min_mobile').value = this.value">
+                        <input type="range" name="rang_min_mobile" id="range_min_mobile" min="1950" max="2024"
+                            value="1950"
+                            oninput="document.getElementById('range_min_number_mobile').value = this.value">
+                        <input type="range" name="rang_max_mobile" id="range_max_mobile" min="1950" max="2024"
+                            value="2024"
+                            oninput="document.getElementById('range_max_number_mobile').value = this.value">
+                        <input type="number" name="rang_max_mobile" id="range_max_number_mobile" min="1950" max="2024"
+                            value="2024" oninput="document.getElementById('range_max_mobile').value = this.value">
+                    </div>
+                </div>
+                <div class="exacte">
+                    <div>
+                        <input type="radio" name="any_mobile" id="exacte_mobile">
+                        <span></span>
+                        <label for="exacte_mobile">Any exacte</label>
+                    </div>
+                    <input type="number" min="1950" max="2024" value="2024">
+                </div>
+            </div>
+            <input type="reset" value="Reset" onclick="resetFilter()">
+        </form>
         <span class="arrow material-symbols-outlined" id="arrow_floating_filter"
             onclick="floatingFilter('show')">chevron_right</span>
         <!-- https://codepen.io/GreenSock/pen/JjXqMZK -->
