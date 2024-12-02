@@ -85,3 +85,15 @@ Dissabte 30 de Novembre de 2024
     Canvis menors en totes les pàgines
     Eliminació de "contacte.php"
     Experiment en "contacte.js" per enviar el formulari per correu sense PHP
+
+Diumenge 1 de Decembre de 2024
+    Afegir l'apartat "responsive" amb "media screen"
+
+-------
+
+ENTREGA
+
+-------
+
+Dilluns 2 de Decembre de 2024
+    Afegir "media screen" a les altres pàgines
