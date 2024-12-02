@@ -233,10 +233,43 @@ jocs = {
         color: "blue",
         genere: "aventura",
         any: 2022
+    },
+    26: {
+        src: "https://i.pinimg.com/736x/10/2a/9b/102a9b6f3f5d2ef4ac22838b42e85f37.jpg",
+        name: "Clash Royale",
+        description: "Clash Royale és un videojoc d'estratègia en temps real desenvolupat i publicat per Supercell. El joc combina elements de jocs de cartes col·leccionables, defensa de torres i camp de batalla en línia multijugador. El joc es va llançar a nivell mundial el 2 de març de 2016. Clash Royale va assolir ingressos de mil milions de dòlars en menys d'un any al mercat. En tres anys, Clash Royale va obtenir ingressos de 2.500 milions de dòlars segons l'empresa d'intel·ligència de mercat Sensor Tower. És el primer spin-off de Clash of Clans.",
+        color: "blue",
+        genere: "estrategia",
+        any: 2016
+    },
+    27: {
+        src: "https://i.pinimg.com/736x/5e/06/06/5e0606fa24129d51e2fda7608e9b079a.jpg",
+        name: "Subway Surfers",
+        description: "Subway Surfers és un joc mòbil de corredors sense fi del 2012 que està desenvolupat conjuntament per Kiloo i SYBO Games, empreses privades amb seu a Dinamarca. Està disponible a les plataformes iOS, Android, HarmonyOS, Amazon Fire Tablet i Windows Phone i utilitza el motor de joc Unity. En el joc, els jugadors fan el paper de joves grafiters, liderats per Jake que, en ser atrapat en l'acte d'etiquetar un lloc de ferrocarril del metro, corre per les vies del ferrocarril per escapar de l'inspector i el seu gos. Mentre corren, agafen monedes d'or, power-ups i molts altres articles alhora que esquiven les col·lisions amb trens i altres objectes. També poden saltar a dalt dels trens i navegar amb hoverboards per evadir la captura fins que el personatge xoca contra un obstacle, és atrapat per l'inspector o és atropellat per un tren, moment en què acaba el joc. Els esdeveniments especials, com ara Season Hunt i altres, com ara els esdeveniments d'aniversari del joc, el Super Runners Challenge i el Rivals Challenge, poden donar lloc a recompenses i personatges dins del joc. També amb punts i claus poden comprar diferents vestits i personatges.",
+        color: "red",
+        genere: "aventura",
+        any: 2012
+    },
+    28: {
+        src: "https://interfaceingame.com/wp-content/uploads/clash-of-clans/clash-of-clans-cover-375x500.jpg",
+        name: "Clash of Clans",
+        description: "Clash of Clans és un videojoc d'estratègia per a mòbils gratuït del 2012 desenvolupat i publicat Supercell. El joc es va llançar per a plataformes iOS el 2 d'agost de 2012 i a Google Play per a Android el 7 d'octubre de 2013.\nEl joc està ambientat en un món persistent de temàtica fantàstica on el jugador és el cap d'un poble. Clash of Clans encarrega als jugadors de construir el seu propi poble utilitzant els recursos obtinguts en atacar els pobles d'altres jugadors amb tropes, guanyar recompenses, comprar-los amb medalles o produir-los al seu propi poble. Els jugadors poden unir-se per crear clans (grups de fins a cinquanta jugadors) que després poden participar en Clan Wars junts, donar i rebre tropes i xerrar entre ells. Els jugadors també poden construir un poble del clan anomenat capital del clan.",
+        color: "yellow",
+        genere: "estrategia",
+        any: 2012
     }
+
+    /*plantilla: {
+        src: "",
+        name: "",
+        description: "",
+        color: "",
+        genere: "",
+        any: 
+    }*/
 }
 
-num_jocs = 26;
+num_jocs = 29; // Últim número +1
 
 function addGames() {
     list = document.getElementById('product_list');
@@ -286,6 +319,8 @@ function filter(name) {
             document.getElementsByClassName('puzzle')[i].classList.toggle('hide');
         } else if (name == 'esports') {
             document.getElementsByClassName('esports')[i].classList.toggle('hide');
+        } else if (name == 'estrategia') {
+            document.getElementsByClassName('estrategia')[i].classList.toggle('hide');
         }
     }
 }
