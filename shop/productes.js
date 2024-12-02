@@ -6,18 +6,24 @@ function onload() {
 
 function searchGame() {
     if (localStorage.getItem('load') == 'true') {
-        alert('loaded');
         localStorage.setItem('load', '')
-        query = localStorage.getItem('query').value;
-        alert(query);
+        query = localStorage.getItem('query');
+        console.log(query);
+
+        if (query == 'hola') {
+            console.log('tes');
+        }
+
+        for (q = 0; q < num_jocs; q++) {
+            document.getElementById(q).style.display = 'none';
+
+            if (jocs[q]["name"].toLowerCase().includes(query.toLowerCase())) {
+                console.log(q + ' contains');
+                document.getElementById(q).style.display = 'flex';
+            }
+        }
     }
 }
-
-/*addEventListener('message', function (e) {
-    if (e.origin == 'localhost') {
-        alert('hola');
-    }
-})*/
 
 jocs = {
     0: {
@@ -337,5 +343,27 @@ document.getElementById('product_list').addEventListener('click', e => {
         parent.querySelector('p.title').style = 'position: absolute; font-size: 16px; transition: .3s;';
         parent.querySelector('p.description').style = 'display: none;';
         parent.querySelector('span').style = 'display: none;';
+    }
+})
+
+// SEARCH
+
+search = document.getElementById('search_bar');
+
+function btnSearch() {
+    div = document.getElementById('search_div');
+    div.classList.toggle('active');
+    if (div.classList.contains('active')) {
+        search.focus();
+    }
+}
+
+search.addEventListener('keydown', () => {
+    localStorage.setItem('query', search.value);
+})
+
+search.addEventListener('keypress', function (e) {
+    if (e.key == 'Enter') {
+        localStorage.setItem('load', 'true');
     }
 })
