@@ -12,6 +12,8 @@ function menu(name) {
     }
 }
 
+// SEARCH
+
 search = document.getElementById('search_bar');
 
 function btnSearch() {
@@ -22,8 +24,8 @@ function btnSearch() {
     }
 }
 
-search.addEventListener('keyup', () => {
-    localStorage.setItem('query', 'search');
+search.addEventListener('keydown', () => {
+    localStorage.setItem('query', search.value);
 })
 
 search.addEventListener('keypress', function (e) {
