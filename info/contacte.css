@@ -418,24 +418,6 @@ footer {
 }
 
 @media screen and (max-width: 730px) {
-    .side-img div:nth-child(2) {
-        display: none;
-    }
-
-    .blocks {
-        display: flex !important;
-        flex-direction: column;
-
-        div {
-            width: 100% !important;
-            aspect-ratio: 4/2;
-
-            &:hover {
-                transform: none !important;
-            }
-        }
-    }
-
     footer {
         .main-div {
             display: block;
@@ -461,6 +443,14 @@ footer {
 
         .copyright {
             font-size: .8em;
+        }
+    }
+
+    .form {
+        flex-direction: column;
+
+        div, form {
+            width: 100% !important;
         }
     }
 }
