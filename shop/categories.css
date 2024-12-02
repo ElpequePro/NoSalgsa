@@ -199,8 +199,6 @@ aside {
 
 /* MAIN */
 
-main {}
-
 .img {
     background: linear-gradient(0deg, #111 0%, #11111130 100%), url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/d96bb958-4e6c-4ce0-9447-fbe226fbbecf/dgjg1mu-006aca44-56e1-437c-8cda-3053b2186b9d.jpg');
     background-size: cover;
@@ -210,7 +208,10 @@ main {}
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3em;
+
+    h1 {
+        font-size: 5em;
+    }
 }
 
 .content {
@@ -631,27 +632,65 @@ h3:has(span) {
     nav ul {
         display: none;
     }
-}
 
-@media screen and (max-width: 730px) {
-    .side-img div:nth-child(2) {
-        display: none;
+    .img h1 {
+        font-size: 4em;
     }
 
-    .blocks {
-        display: flex !important;
-        flex-direction: column;
+    .game-list ul {
+        overflow: auto;
+        justify-content: left;
 
-        div {
-            width: 100% !important;
-            aspect-ratio: 4/2;
+        li {
+            min-width: 150px;
+            min-height: 150px;
+        }
 
-            &:hover {
-                transform: none !important;
-            }
+        p {
+            flex-direction: column;
+            align-items: start !important;
         }
     }
 
+    .desc-top-blocks h2 {
+        font-size: 20px;
+    }
+
+    .subs-block {
+        div:has(div) {
+            background: none !important;
+        }
+
+        ul {
+            display: none;
+        }
+
+        div div {
+            padding-bottom: 60px !important;
+        }
+
+        div:first-child button {
+            background: var(--gris);
+            color: white;
+        }
+
+        button {
+            margin-top: -48px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .subs-block {
+        flex-direction: column;
+
+        div:has(div) {
+            width: 100% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 730px) {
     footer {
         .main-div {
             display: block;
@@ -678,5 +717,36 @@ h3:has(span) {
         .copyright {
             font-size: .8em;
         }
+    }
+
+    .img h1 {
+        font-size: 3em;
+    }
+
+    .desc-top-blocks {
+        display: none !important;
+    }
+
+    .div-grid-popular {
+        display: flex !important;
+        width: 100%;
+        flex-wrap: wrap !important;
+        justify-content: center;
+        gap: 16px !important;
+
+        div {
+            width: 45% !important;
+            aspect-ratio: 1/1 !important;
+            border-radius: 8px !important;
+
+            &::before {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .categories {
+        flex-direction: column;
+        text-align: center;
     }
 }
