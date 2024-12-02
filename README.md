@@ -11,7 +11,7 @@
 
 Aquest és un projecte fet a les assignatures **Disseny d'Interfícies Web** i **Llenguatge de Marques i Sistemes de Gestió d'Informació**.
 
-Està fet amb l'intenció aprendre nous conceptes i millorar els coneguts.
+Està fet amb l'intenció d'aprendre nous conceptes i millorar els coneguts.
 
 ## Pàgines 
 
