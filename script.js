@@ -31,6 +31,6 @@ search.addEventListener('keydown', () => {
 search.addEventListener('keypress', function (e) {
     if (e.key == 'Enter') {
         localStorage.setItem('load', 'true');
-        setTimeout(window.location.replace('/shop/productes.html'), 2000);
+        window.location.replace('/shop/productes.html');
     }
 })
