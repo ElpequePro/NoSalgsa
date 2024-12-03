@@ -8,4 +8,17 @@ Per veure la pàgina de GitHub des del navegador s'utilitzarà el següent enlla
 
 ![permalink](img/permalink.png)
 
-4. Entrem a la pàgina 
+2. Entrem a la pàgina anomenada anteriorment i enganxem l'enllaç
+
+![raw](img/raw.png)
+
+3. Copiarem el primer enllaç que surt a la part inferior
+
+![enllac](img/enllac.png)
+
+4. Enganxem l'enllaç al navegador i podrem observar la pàgina
+
+![navegador](img/navegador.png)
+
+> 
+> 
