@@ -13,6 +13,10 @@ Aquest és un projecte fet a les assignatures **Disseny d'Interfícies Web** i *
 
 Està fet amb l'intenció d'aprendre nous conceptes i millorar els coneguts.
 
+```
+https://rawcdn.githack.com/ElpequePro/NoSalgsa/0461140e833e27f483226d1e8e1a2bf24f9e8f1c/index.html
+```
+
 ## Pàgines 
 
 ### Home
