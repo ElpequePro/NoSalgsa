@@ -420,6 +420,10 @@ form.floating-div {
     }
 }
 
+form.floating-div-mobile {
+    display: none;
+}
+
 span.arrow {
     position: absolute;
     top: calc(78px + 40px);
