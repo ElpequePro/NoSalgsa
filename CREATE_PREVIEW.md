@@ -5,5 +5,7 @@ Per veure la pàgina de GitHub des del navegador s'utilitzarà el següent enlla
 ## Tutorial
 
 1. Anirem al `index.html` i copiarem el _permalink_.
-[permalink]('img/permalink.jpg');
-2. Entrem a la pàgina 
+
+![permalink](img/permalink.png)
+
+4. Entrem a la pàgina 
