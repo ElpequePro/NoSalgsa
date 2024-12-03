@@ -20,5 +20,5 @@ Per veure la pàgina de GitHub des del navegador s'utilitzarà el següent enlla
 
 ![navegador](img/navegador.png)
 
-> 
-> 
+> ![IMPORTANT]
+> Cada vegada que el contingut es modifica, s'ha de crear un nou enllaç
