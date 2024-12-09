@@ -38,7 +38,7 @@ S'ha utilitzat els següents _tags_:
 
 - `section`: Blocs de continguts
 
-- `footer`: Peru de pàgina
+- `footer`: Peu de pàgina
 
 - `article`: Blocs dels jocs
 
