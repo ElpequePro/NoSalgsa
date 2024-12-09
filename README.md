@@ -26,7 +26,7 @@ Aquesta és la imatge del meu prototip al Figma:
 
 ## Justificació de la semàntica
 
-S'ha utilitzat els següents _tags_ per la semàntica:
+S'ha utilitzat els següents _tags_:
 
 - `nav`: Barra de navegació
 
