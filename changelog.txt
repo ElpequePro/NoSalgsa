@@ -95,12 +95,12 @@ ENTREGA
 
 -------
 
-Dilluns 2 de Decembre de 2024
+Dilluns 2 de Desembre de 2024
     Afegir "media screen" a les altres pàgines
         Revisió que el format sigui correcte des de mòbil
     Acabar la búsqueda del "search-input"
     Canviar alguns arxius ".md" del GitHub a una altra "branch"
 
-Dilluns 9 de Decembre de 2024
+Dilluns 9 de Desembre de 2024
     Afegir metadades
     Corretgir semàntica (afegir header)
