@@ -13,7 +13,7 @@ Aquest és un projecte fet a les assignatures **Disseny d'Interfícies Web** i *
 
 Està fet amb l'intenció d'aprendre nous conceptes i millorar els coneguts.
 
-<a href='https://rawcdn.githack.com/ElpequePro/NoSalgsa/dd34f02156f3c41738d966f9e2aef19da35b4a10/index.html'>Raw Code Page Preview</a> (potser no està actualitzat)
+<a href='https://rawcdn.githack.com/ElpequePro/NoSalgsa/dd34f02156f3c41738d966f9e2aef19da35b4a10/index.html'>Raw Code Page Preview</a> (potser no està actualitzat) - 3 Dec
 
 ## Pàgines 
 
