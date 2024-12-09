@@ -12,9 +12,9 @@ Aquesta és la imatge del meu prototip al Figma:
 
 ## Justificació de les metadades
 
-`<meta charset="utf-8" />` (html:5): Permet utilitzar la majoria de caràcters
+`<meta charset="utf-8" />` (`html:5`): Permet utilitzar la majoria de caràcters
 
-`<meta name="viewport" content="width=device-width, initial-scale=1.0">` (html:5):
+`<meta name="viewport" content="width=device-width, initial-scale=1.0">` (`html:5`):
 
 - `width`: Determina l'amplada de la pàgina web.
   - `device-width`: Aplica l'amplada del dispositiu.
