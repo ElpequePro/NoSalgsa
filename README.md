@@ -50,4 +50,4 @@ S'ha utilitzat els següents _tags_:
 
 S'ha utilitzat el GitHub ja que el projecte el tinc en aquesta plataforma, i així està tot agrupat.
 
-Es suposa que està a l'apartat **Projects**, però deixo el l'<a href='https://github.com/users/akinfenwa69/projects/2/views/1'>enllaç</a>.
+Es suposa que està a l'apartat **Projects**, però deixo l'<a href='https://github.com/users/akinfenwa69/projects/2/views/1'>enllaç</a>.
