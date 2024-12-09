@@ -46,6 +46,10 @@ S'ha utilitzat els següents _tags_:
 
 
 
+## Hosting
+
+
+
 ## Planificació del projecte
 
 S'ha utilitzat el GitHub ja que el projecte el tinc en aquesta plataforma, i així està tot agrupat.
