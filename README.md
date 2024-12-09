@@ -24,11 +24,6 @@ Aquesta és la imatge del meu prototip al Figma:
 
 `<meta name="description" content="...">`: La descripció de la pàgina, o sigui, el text d'abaix el títol quan es busca pel navegador
 
-
-## Catàleg de recursos de generador de metadades
-
-
-
 ## Justificació de la semàntica
 
 
