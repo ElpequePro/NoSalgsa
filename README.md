@@ -82,7 +82,7 @@ aspect-ratio: 1850 / 939;
 
 ### Menus
 
-Hi ha un script per la barra de navegació lateral (☰), per expandir i plegar, un pel redireccionament de pàgines i un altre per la barra de cerca, on es redireccionarà a la pàgina de productes i (s'intentarà) mostrar el/s joc que tinguin el escrit.
+Hi ha un script per la barra de navegació lateral (☰), per expandir i plegar, un pel redireccionament de pàgines i un altre per la barra de cerca, on es redireccionarà a la pàgina de productes i mostrar el/s joc que tinguin el escrit.
 
 ### Productes
 
