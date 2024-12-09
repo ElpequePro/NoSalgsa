@@ -227,11 +227,12 @@ header {
             cursor: pointer;
 
             &.active {
-                background-color: #222;
+                background-color: #333;
+                color: white;
             }
 
             &:hover {
-                background-color: #333;
+                background-color: #444;
             }
         }
     }
