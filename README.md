@@ -12,7 +12,13 @@ Aquesta és la imatge del meu prototip al Figma:
 
 ## Justificació de les metadades
 
-`<meta charset="utf-8" />`: Permet utilitzar la majoria de caràcters
+`<meta charset="utf-8" />` (html:5): Permet utilitzar la majoria de caràcters
+
+`<meta name="viewport" content="width=device-width, initial-scale=1.0">` (html:5):
+
+- `width`: Determina l'amplada de la pàgina web.
+  - `device-width`: Aplica l'amplada del dispositiu.
+- `initial-scale`: Controla el zoom. Per defecte és 1.
 
 `<meta name="author" content="Pol Poblet Pallisé" />`: Especifica l'autor de la pàgina web
 
