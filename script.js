@@ -38,34 +38,33 @@ search.addEventListener('keypress', function (e) {
 function checkCookies() {
     if (localStorage.getItem('cookies') == 'true') {
         document.getElementById('cookie_div').style.display = 'none';
-        document.style = 'pointer-events: auto;';
+        document.querySelector('body').style = 'pointer-events: auto; overflow: auto;';
         console.log('Cookies validades!');
     } else {
-        document.style = 'pointer-events: none;';
+        document.querySelector('body').style = 'pointer-events: none; overflow: hidden;';
 
         cookie_div = document.createElement('article');
-        cookie_text = document.createElement('div');
+        cookie_text_block = document.createElement('div');
+        cookie_title = document.createElement('h1');
         cookie_p = document.createElement('p');
         cookie_btn_no = document.createElement('button');
         cookie_btn_yes = document.createElement('button');
 
         cookie_div.id = 'cookie_div';
+        cookie_text_block.id = 'cookie_text_block';
+        cookie_title.id = 'cookie_title';
         cookie_btn_no.id = 'cookie_btn_no';
         cookie_btn_yes.id = 'cookie_btn_yes';
 
-        cookie_div.style = 'position: fixed; bottom: 0; left: 0; width: 100%; height: 40%; background: #fff; padding: 40px; box-shadow: 0 0 40px #111;';
-        cookie_text.style = 'color: black; overflow-y: auto; height: calc(100% - 20px*2);';
-        cookie_btn_no.style = 'background: none; margin-top: 20px; padding: 12px 16px; border: 1px solid red; margin-right: 16px; border-radius: 40px;';
-        cookie_btn_yes.style = 'background: red; margin-top: 20px; padding: 14px 18px; border: none; border-radius: 40px; color: white;';
-
-        cookie_text.innerHTML = '<h1>Política de Cookies</h1><hr>';
-        cookie_p.textContent = 'El acceso a este Sitio Web puede implicar la utilización de cookies. Las cookies son pequeñas cantidades de información que se almacenan en el navegador utilizado por cada Usuario —en los distintos dispositivos que pueda utilizar para navegar— para que el servidor recuerde cierta información que posteriormente y únicamente el servidor que la implementó leerá. Las cookies facilitan la navegación, la hacen más amigable, y no dañan el dispositivo de navegación.\nLas cookies son procedimientos automáticos de recogida de información relativa a las preferencias determinadas por el Usuario durante su visita al Sitio Web con el fin de reconocerlo como Usuario, y personalizar su experiencia y el uso del Sitio Web, y pueden también, por ejemplo, ayudar a identificar y resolver errores.\nLa información recabada a través de las cookies puede incluir la fecha y hora de visitas al Sitio Web, las páginas visionadas, el tiempo que ha estado en el Sitio Web y los sitios visitados justo antes y después del mismo. Sin embargo, ninguna cookie permite que esta misma pueda contactarse con el número de teléfono del Usuario o con cualquier otro medio de contacto personal. Ninguna cookie puede extraer información del disco duro del Usuario o robar información personal. La única manera de que la información privada del Usuario forme parte del archivo Cookie es que el usuario dé personalmente esa información al servidor.\nLas cookies que permiten identificar a una persona se consideran datos personales. Por tanto, a las mismas les será de aplicación la Política de Privacidad anteriormente descrita. En este sentido, para la utilización de las mismas será necesario el consentimiento del Usuario. Este consentimiento será comunicado, en base a una elección auténtica, ofrecido mediante una decisión afirmativa y positiva, antes del tratamiento inicial, removible y documentado.';
+        cookie_title.innerHTML = '<h1>Política de Cookies</h1><hr>';
+        cookie_p.innerHTML = "<p>L'accés a aquest Lloc Web pot implicar la utilització de galetes.Les galetes són petites quantitats d'informació que s'emmagatzemen al navegador utilitzat per cada Usuari - en els diferents dispositius que pugui utilitzar per navegar - perquè el servidor recordi certa informació que posteriorment i únicament el servidor que la va implementar llegirà.Les galetes faciliten la navegació, la fan més amigable, i no fan malbé el dispositiu de navegació.</p > <p>Les cookies són procediments automàtics de recollida d'informació relativa a les preferències determinades per l'Usuari durant la visita al Lloc Web per tal de reconèixer-lo com a Usuari, i personalitzar la seva experiència i l'ús del Lloc Web, i també poden, per exemple, ajudar a identificar i resoldre errors.</p><p>La informació recollida a través de les cookies pot incloure la data i hora de visites al Lloc Web, les pàgines visionades, el temps que ha estat al Lloc Web i els llocs visitats just abans i després del mateix. No obstant això, cap galeta permet que aquesta mateixa pugui contactar amb el número de telèfon de l'Usuari o amb qualsevol altre mitjà de contacte personal. Cap galeta no pot extreure informació del disc dur de l'Usuari o robar informació personal. manera que la informació privada de l'Usuari formi part del fitxer Cookie és que l'usuari doni personalment aquesta informació al servidor.</p><p>Les galetes que permeten identificar una persona es consideren dades personals. comunicat, en base a una elecció autèntica, ofert mitjançant una decisió afirmativa i positiva, abans del tractament inicial, removible i documentat.</p>";
         cookie_btn_no.textContent = 'Denegar cookies';
         cookie_btn_yes.textContent = 'Acceptar cookies';
 
         document.body.appendChild(cookie_div);
-        cookie_text.appendChild(cookie_p);
-        cookie_div.appendChild(cookie_text);
+        cookie_text_block.appendChild(cookie_title);
+        cookie_text_block.appendChild(cookie_p);
+        cookie_div.appendChild(cookie_text_block);
         cookie_div.appendChild(cookie_btn_no);
         cookie_div.appendChild(cookie_btn_yes);
     }
