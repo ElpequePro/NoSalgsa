@@ -26,7 +26,21 @@ Aquesta és la imatge del meu prototip al Figma:
 
 ## Justificació de la semàntica
 
+S'ha utilitzat els següents _tags_ per la semàntica:
 
+- `nav`: Barra de navegació
+
+- `aside`: Menú lateral
+
+- `main`: Conté tot el contingut principal de la pàgina
+
+- `header`: Imatge o portada principal de la pàgina
+
+- `section`: Blocs de continguts
+
+- `footer`: Peru de pàgina
+
+- `article`: Blocs dels jocs
 
 ## Justificació de la LOPD i RGDP
 
