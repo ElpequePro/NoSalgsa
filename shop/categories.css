@@ -199,7 +199,7 @@ aside {
 
 /* MAIN */
 
-.img {
+header {
     background: linear-gradient(0deg, #111 0%, #11111130 100%), url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/d96bb958-4e6c-4ce0-9447-fbe226fbbecf/dgjg1mu-006aca44-56e1-437c-8cda-3053b2186b9d.jpg');
     background-size: cover;
     background-position: center center;
@@ -633,7 +633,7 @@ h3:has(span) {
         display: none;
     }
 
-    .img h1 {
+    header h1 {
         font-size: 4em;
     }
 
@@ -719,7 +719,7 @@ h3:has(span) {
         }
     }
 
-    .img h1 {
+    header h1 {
         font-size: 3em;
     }
 
