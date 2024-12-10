@@ -103,4 +103,9 @@ Dilluns 2 de Desembre de 2024
 
 Dilluns 9 de Desembre de 2024
     Afegir metadades
-    Corretgir semàntica (afegir header)
+    Corregir semàntica (afegir header)
+    Crear l'apartat de cookies
+
+Dimarts 10 de Desembre de 2024
+    Corregir l'apartat de les cookies
+    Crear un arxiu CSS general i eliminar l'afegit en aquest als altres fitxers
