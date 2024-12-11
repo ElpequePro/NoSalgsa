@@ -292,6 +292,7 @@ function addGames() {
         span = document.createElement('span');
 
         div.style.backgroundImage = 'url("' + jocs[i]['src'] + '")';
+        div.setAttribute('decoding', 'async');
         title.innerText = jocs[i]['name'];
         p.innerText = jocs[i]['description'];
         span.innerText = 'close';
