@@ -109,3 +109,7 @@ Dilluns 9 de Desembre de 2024
 Dimarts 10 de Desembre de 2024
     Corregir l'apartat de les cookies
     Crear un arxiu CSS general i eliminar l'afegit en aquest als altres fitxers
+
+Dimecres 11 de Desembre de 2024
+    Validació HTML
+    Arreglar el temps de càrrega d'algunes imatges
