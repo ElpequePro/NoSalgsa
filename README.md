@@ -46,6 +46,8 @@ S'ha utilitzat els següents _tags_:
 
 S'ha afegit 
 
+![Contacte Política de Privacitat](img/contacte_politica_privacitat);
+
 ## Hosting
 
 
