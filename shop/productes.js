@@ -117,7 +117,7 @@ jocs = {
     11: {
         src: "https://storage.googleapis.com/pod_public/1300/216712.jpg",
         name: "Elden Ring",
-        description: "Elden Ring és un joc de rol d'acció del 2022 desenvolupat per FromSoftware. Va ser dirigit per Hidetaka Miyazaki amb la construcció del món proporcionada per l'escriptor de fantasia nord-americà George R. R. Martin. Va ser publicat per a PlayStation 4, PlayStation 5, Windows, Xbox One i Xbox Series X/S el 25 de febrer al Japó per FromSoftware i internacionalment per Bandai Namco Entertainment. Ambientat a Lands Between, els jugadors controlen un personatge personalitzable en una missió per reparar l'Elden Ring i convertir-se en el nou Elden Lord.",
+        description: "Elden Ring és un joc de rol d'acció del 2022 desenvolupat per FromSoftware. Va ser dirigit per hideGeneretaka Miyazaki amb la construcció del món proporcionada per l'escriptor de fantasia nord-americà George R. R. Martin. Va ser publicat per a PlayStation 4, PlayStation 5, Windows, Xbox One i Xbox Series X/S el 25 de febrer al Japó per FromSoftware i internacionalment per Bandai Namco Entertainment. Ambientat a Lands Between, els jugadors controlen un personatge personalitzable en una missió per reparar l'Elden Ring i convertir-se en el nou Elden Lord.",
         color: "yellow",
         genere: "fantasia",
         any: 2022
@@ -312,31 +312,56 @@ function addGames() {
     }
 }
 
-function filter(name) {
+function filterGenere(name) {
     for (i = 0; i < num_jocs; i++) {
         if (name == 'accio') {
-            document.getElementsByClassName('accio')[i].classList.toggle('hide');
+            document.getElementsByClassName('accio')[i].classList.toggle('hideGenere');
         } else if (name == 'aventura') {
-            document.getElementsByClassName('aventura')[i].classList.toggle('hide');
+            document.getElementsByClassName('aventura')[i].classList.toggle('hideGenere');
         } else if (name == 'rpg') {
-            document.getElementsByClassName('rpg')[i].classList.toggle('hide');
+            document.getElementsByClassName('rpg')[i].classList.toggle('hideGenere');
         } else if (name == 'terror') {
-            document.getElementsByClassName('terror')[i].classList.toggle('hide');
+            document.getElementsByClassName('terror')[i].classList.toggle('hideGenere');
         } else if (name == 'fantasia') {
-            document.getElementsByClassName('fantasia')[i].classList.toggle('hide');
+            document.getElementsByClassName('fantasia')[i].classList.toggle('hideGenere');
         } else if (name == 'puzzle') {
-            document.getElementsByClassName('puzzle')[i].classList.toggle('hide');
+            document.getElementsByClassName('puzzle')[i].classList.toggle('hideGenere');
         } else if (name == 'esports') {
-            document.getElementsByClassName('esports')[i].classList.toggle('hide');
+            document.getElementsByClassName('esports')[i].classList.toggle('hideGenere');
         } else if (name == 'estrategia') {
-            document.getElementsByClassName('estrategia')[i].classList.toggle('hide');
+            document.getElementsByClassName('estrategia')[i].classList.toggle('hideGenere');
         }
     }
 }
 
 function resetFilter() {
     for (i = 0; i < num_jocs; i++) {
-        document.getElementById(i).classList.remove('hide');
+        document.getElementById(i).classList.remove('hideGenere');
+        document.getElementById(i).classList.remove('hideAny');
+    }
+}
+
+function filterAny(name) {
+    primer = document.getElementById('range_min_number');
+    segon = document.getElementById('range_max_number');
+    exacte = document.getElementById('input_exacte');
+
+    if (name == 'rang' && document.getElementById('rang').checked) {
+        for (i = 0; i < num_jocs; i++) {
+            if (primer.value <= jocs[i]['any'] && segon.value >= jocs[i]['any']) {
+                document.getElementById(i).classList.remove('hideAny');
+            } else {
+                document.getElementById(i).classList.add('hideAny');
+            }
+        }
+    } else if (name == 'exacte' && document.getElementById('exacte').checked) {
+        for (i = 0; i < num_jocs; i++) {
+            if (exacte.value == jocs[i]['any']) {
+                document.getElementById(i).classList.remove('hideAny');
+            } else {
+                document.getElementById(i).classList.add('hideAny');
+            }
+        }
     }
 }
 
@@ -346,7 +371,7 @@ function floatingFilter(name) {
         document.getElementById('form').style.setProperty('width', '400px', 'important');
         document.getElementById('arrow_floating_filter').style.display = 'none';
         document.getElementById('cross_floating_filter').style.display = 'flex';
-    } else if (name == 'hide') {
+    } else if (name == 'hideGenere') {
         document.getElementById('form').style.setProperty('left', '-20%', 'important');
         document.getElementById('form').style.setProperty('width', '0', 'important');
         document.getElementById('arrow_floating_filter').style.display = 'flex';
