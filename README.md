@@ -44,9 +44,13 @@ S'ha utilitzat els següents _tags_:
 
 ## Justificació de la LOPD i RGDP
 
-S'ha afegit 
+S'ha afegit un botó, que si no és activat, no es pot enviar el formulari.
 
-![Contacte Política de Privacitat](img/contacte_politica_privacitat);
+![Contacte Política de Privacitat](img/contacte_politica_privacitat.png)
+
+Quan li donem a l'enllaç, ens portarà a una pàgina on hi haurà la Política de Privacitat.
+
+![Pàgina Política de Privacitat](img/pagina_politica_privacitat.png)
 
 ## Hosting
 
