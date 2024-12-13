@@ -8,7 +8,7 @@ He escollit aquest tema perquè ja estic familiaritzat amb ell.
 
 Aquesta és la imatge del meu prototip al Figma:
 
-![Prototip](Disseny_Figma.png)
+![Prototip](img/Disseny_Figma.png)
 
 ## Justificació de les metadades
 
