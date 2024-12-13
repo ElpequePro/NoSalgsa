@@ -90,7 +90,12 @@
                 </select>
                 <input type="number" name="comanda" id="comanda" placeholder="Número de la comanda (opcional)">
                 <textarea placeholder="*Missatge" name="missatge" id="missatge" required></textarea>
-                <input type="submit" value="SUBMIT" onclick="mailto()">
+                <div>
+                    <input type="checkbox" id="privacitat">
+                    <label for="privacitat">He llegit i accepto la <a href="politica_privacitat.html">política de
+                            privacitat</a></label>
+                </div>
+                <input type="submit" value="SUBMIT" id="submit" onclick="mailto()">
                 <input type="reset" value="reset">
             </form>
         </section>
