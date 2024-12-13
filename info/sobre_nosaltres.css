@@ -49,6 +49,35 @@ header {
     }
 }
 
+.objectius {
+    padding: 0 40px 20px 40px;
+
+    h2 {
+        margin-bottom: 40px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0;
+
+        li {
+            background-color: var(--gris);
+            padding: 16px;
+            width: calc(50% - 10px);
+            border-radius: 8px;
+
+            b {
+                display: block;
+                margin-bottom: 8px;
+                font-size: 1.3em;
+            }
+        }
+    }
+}
+
 /* ALTRES */
 
 /* MEDIA */
