@@ -44,7 +44,7 @@ S'ha utilitzat els següents _tags_:
 
 ## Justificació de la LOPD i RGDP
 
-
+S'ha afegit 
 
 ## Hosting
 
