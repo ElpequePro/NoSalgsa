@@ -15,6 +15,7 @@ form.floating-div {
     width: 35%;
     transition: .3s;
     position: relative;
+    overflow: auto;
 
     h2 {
         margin-bottom: 16px;
@@ -149,6 +150,7 @@ form.floating-div {
             border: none;
             border-radius: 8px;
             padding: 8px;
+            font-size: 20px;
         }
 
         div div:first-child {
@@ -175,6 +177,7 @@ form.floating-div {
                 border: none;
                 border-radius: 8px;
                 padding: 8px;
+                font-size: 20px;
             }
 
             input[type=range] {
@@ -282,7 +285,11 @@ div.product-list {
             overflow-y: auto;
         }
 
-        &.hide {
+        &.hideGenere {
+            display: none;
+        }
+
+        &.hideAny {
             display: none;
         }
 
@@ -322,6 +329,26 @@ div.product-list {
 /* ALTRES */
 
 /* MEDIA */
+
+@media screen and (max-width: 1250px) {
+    input[type='number'] {
+        font-size: 16px !important;
+    }
+
+    .any {
+        h2 {
+            font-size: 24px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .rang {
+        input[type='range'] {
+            display: none;
+        }
+    }
+}
 
 @media screen and (max-width: 925px) {
     main {
