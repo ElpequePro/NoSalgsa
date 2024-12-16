@@ -113,3 +113,14 @@ Dimarts 10 de Desembre de 2024
 Dimecres 11 de Desembre de 2024
     Validació HTML
     Arreglar el temps de càrrega d'algunes imatges
+
+-------
+
+ENTREGA
+
+-------
+
+Dilluns 16 de Desembre de 2024
+    Modificació de Categories, aplicant canvis dels profes
+    Intentar crear un arxiu que contingui la barra de navegació i la barra lateral per importar als arxius
+        Probablement PHP, el iframe he provat i no m'ha acabat d'agradar
