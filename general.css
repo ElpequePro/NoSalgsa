@@ -51,11 +51,11 @@ nav {
     i {
         height: 48px;
         font-size: 1.5em;
-        display: flex;
         justify-content: center;
         align-items: center;
         aspect-ratio: 1/1;
         cursor: pointer;
+        display: none;
     }
 
     img {
@@ -84,6 +84,34 @@ nav {
 
             &.active {
                 background-color: rgba(32, 32, 32, .6);
+            }
+        }
+
+        .tenda {
+            position: relative;
+
+            span {
+                margin-left: 8px;
+                font-size: 28px;
+            }
+
+            ul {
+                position: absolute;
+                display: none;
+                flex-direction: column;
+                background-color: rgba(50, 50, 50, .5) !important;
+                bottom: calc(-78px - 46px);
+                left: 0;
+                height: fit-content;
+                padding: 0;
+
+                li {
+                    justify-content: left !important;
+                }
+            }
+
+            &:hover ul {
+                display: flex;
             }
         }
     }
@@ -356,8 +384,14 @@ h2 {
 /* MEDIA */
 
 @media screen and (max-width: 980px) {
-    nav ul {
-        display: none;
+    nav {
+        i {
+            display: flex;
+        }
+
+        ul {
+            display: none;
+        }
     }
 }
 
