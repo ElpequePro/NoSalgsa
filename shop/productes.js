@@ -371,7 +371,7 @@ function floatingFilter(name) {
         document.getElementById('form').style.setProperty('width', '400px', 'important');
         document.getElementById('arrow_floating_filter').style.display = 'none';
         document.getElementById('cross_floating_filter').style.display = 'flex';
-    } else if (name == 'hideGenere') {
+    } else if (name == 'hide') {
         document.getElementById('form').style.setProperty('left', '-20%', 'important');
         document.getElementById('form').style.setProperty('width', '0', 'important');
         document.getElementById('arrow_floating_filter').style.display = 'flex';
