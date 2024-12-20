@@ -100,7 +100,7 @@ nav {
                 display: none;
                 flex-direction: column;
                 background-color: rgba(50, 50, 50, .5) !important;
-                bottom: calc(-78px - 46px);
+                top: 78px;
                 left: 0;
                 height: fit-content;
                 padding: 0;

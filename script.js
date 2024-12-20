@@ -2,6 +2,21 @@ function resetSearch() {
     document.getElementById('search_bar').value = '';
 }
 
+// MENU
+
+function menu(name) {
+    if (name == 'open') {
+        document.querySelector('aside').style.width = '400px';
+        document.querySelector('aside').style.marginLeft = '0';
+        document.body.style.backgroundColor = 'rgba(13, 13, 13, .5)';
+    } if (name == 'close') {
+        document.querySelector('aside').style.width = '0';
+        document.querySelector('aside').style.marginLeft = '-20%';
+        document.body.setAttribute('background-color', 'none', 'important');
+        document.body.setAttribute('background', 'transparent', 'important');
+    }
+}
+
 // SEARCH
 
 search = document.getElementById('search_bar');
