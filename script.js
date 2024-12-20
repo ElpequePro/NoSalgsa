@@ -40,6 +40,8 @@ search.addEventListener('keypress', function (e) {
     }
 })
 
+// COOKIES
+
 function checkCookies() {
     if (localStorage.getItem('cookies') == 'true') {
         console.log('Cookies validades!');
