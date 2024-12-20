@@ -1,3 +1,9 @@
+/* NAV */
+
+nav {
+    user-select: none;
+}
+
 /* MAIN */
 
 header {
