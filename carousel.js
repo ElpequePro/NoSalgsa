@@ -23,4 +23,4 @@ function changeCarousel() {
     }
 }
 
-setInterval(changeCarousel, 2000);
+setInterval(changeCarousel, 5000);
