@@ -5,5 +5,21 @@ url = ["img/carousel1.png", "img/carousel2.png", "img/carousel3.png"];
 
 function carousel() {
     // background: [background-color] [background-image] [background-repeat] [background-position] [background-size] [background-attachment] [background-clip] [background-origin] [background-composite];
-    car.style.background = bgcolor + ", url('" + url[0] + "'), no-repeat, center center, cover";
+    car.style.backgroundSize = "cover";
+    car.style.backgroundPosition = "center center";
+
+    changeCarousel();
+}
+
+function changeCarousel() {
+    setInterval(function () {
+        i = 0;
+        while(i != 3) {
+        car.style.background = bgcolor + ", url('" + url[i] + "')";
+        i++;
+        if (i == 2) {
+            i = 0;
+        }
+    }
+}, 1000);
 }
