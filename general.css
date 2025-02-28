@@ -286,6 +286,35 @@ header {
             }
         }
     }
+
+    .left,
+    .right {
+        position: absolute;
+        color: white;
+        font-size: 24px;
+        width: 52px;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: .3s;
+        cursor: pointer;
+        user-select: none;
+        text-shadow: 0 0 8px black;
+
+        &:hover {
+            background-color: #666;
+        }
+    }
+
+    .left {
+        left: 20px;
+    }
+
+    .right {
+        right: 20px;
+    }
 }
 
 /* FOOTER */

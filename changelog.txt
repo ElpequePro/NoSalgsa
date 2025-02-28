@@ -124,3 +124,15 @@ Dilluns 16 de Desembre de 2024
     Modificació de Categories, aplicant canvis dels profes
     Intentar crear un arxiu que contingui la barra de navegació i la barra lateral per importar als arxius
         Probablement PHP, el iframe he provat i no m'ha acabat d'agradar
+
+-------
+
+Projecte RA3 i RA4 - Elements multimèdia per a la vostra web
+
+-------
+
+Divendres 28 de Febrer de 2025
+    Afegir carousel (ja estava afegit - 7 Feb)
+    Afegir plantilla pel video
+    Crear la infografia interactiva (chart.js)
+    (El mapa ja estava posat)
