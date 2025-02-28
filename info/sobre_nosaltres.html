@@ -29,12 +29,12 @@
             <ul>
                 <li onclick="window.location.href='../index.html'">Home</li>
                 <li onclick="window.location.href='../shop/productes.html'" class="tenda">Tenda <span
-                    class="material-symbols-outlined">keyboard_arrow_down</span>
-                <ul>
-                    <li onclick="window.location.href='../shop/productes.html'">Productes</li>
-                    <li onclick="window.location.href='../shop/categories.html'">Categories</li>
-                </ul>
-            </li>
+                        class="material-symbols-outlined">keyboard_arrow_down</span>
+                    <ul>
+                        <li onclick="window.location.href='../shop/productes.html'">Productes</li>
+                        <li onclick="window.location.href='../shop/categories.html'">Categories</li>
+                    </ul>
+                </li>
                 <li onclick="window.location.href='contacte.html'">Contacte</li>
                 <li onclick="window.location.href='sobre_nosaltres.html'" class="active">Sobre Nosaltes</li>
             </ul>
@@ -81,13 +81,41 @@
         <section class="objectius">
             <h2>Els nostres objectius:</h2>
             <ul>
-                <li><b>Proporcioneu ressenyes completes de jocs</b>Ofereix ressenyes honestes i detallades dels últims videojocs a diferents plataformes per ajudar els jugadors a prendre decisions informades.</li>
-                <li><b>Oferiu notícies oportunes del sector</b>Mantingueu la comunitat actualitzada amb les últimes notícies, anuncis i tendències del sector dels jocs.</li>
-                <li><b>Fomentar la participació de la comunitat</b>Creeu un espai acollidor perquè els jugadors es connectin, comparteixin experiències i participin en debats a través de fòrums i xarxes socials.</li>
-                <li><b>Oferiu guies i tutorials</b>Proporcioneu recursos, consells i estratègies útils per ajudar els jugadors a millorar les seves habilitats i millorar la seva experiència de joc.</li>
-                <li><b>Destaca els jocs independents</b>Promociona i dóna suport als desenvolupadors de jocs independents mostrant títols únics i innovadors que mereixen un reconeixement.</li>
-                <li><b>Organitzeu esdeveniments i concursos</b>Organitzeu esdeveniments de jocs, tornejos i concursos per fomentar la participació de la comunitat i celebrar la cultura del joc.</li>
+                <li><b>Proporcioneu ressenyes completes de jocs</b>Ofereix ressenyes honestes i detallades dels últims
+                    videojocs a diferents plataformes per ajudar els jugadors a prendre decisions informades.</li>
+                <li><b>Oferiu notícies oportunes del sector</b>Mantingueu la comunitat actualitzada amb les últimes
+                    notícies, anuncis i tendències del sector dels jocs.</li>
+                <li><b>Fomentar la participació de la comunitat</b>Creeu un espai acollidor perquè els jugadors es
+                    connectin, comparteixin experiències i participin en debats a través de fòrums i xarxes socials.
+                </li>
+                <li><b>Oferiu guies i tutorials</b>Proporcioneu recursos, consells i estratègies útils per ajudar els
+                    jugadors a millorar les seves habilitats i millorar la seva experiència de joc.</li>
+                <li><b>Destaca els jocs independents</b>Promociona i dóna suport als desenvolupadors de jocs
+                    independents mostrant títols únics i innovadors que mereixen un reconeixement.</li>
+                <li><b>Organitzeu esdeveniments i concursos</b>Organitzeu esdeveniments de jocs, tornejos i concursos
+                    per fomentar la participació de la comunitat i celebrar la cultura del joc.</li>
             </ul>
+        </section>
+        <section class="video">
+            <h2>Video introducció:</h2>
+            <iframe src="https://www.youtube.com/embed/sF5LYGgKbUA?enablejsapi=1&showinfo=0&controls=0" id="video"
+                frameborder="0" allowfullscreen></iframe>
+            <div>
+                <span class="material-symbols-outlined" id="playPause" onclick="playPause()">play_arrow</span>
+                <!-- pause -->
+                <div>
+                    <p id='vidTime'>00:00 / 00:00</p>
+                    <input type="range" name="" id="vidLength" value="0" min="0">
+                </div>
+                <div>
+                    <span class="material-symbols-outlined" id="btnVolume" onclick="showVolume()">volume_up</span>
+                    <!-- valume_down // volume_off -->
+                    <input type="range" class="hidden" name="" id="inpVolume" value="100" min="0" max="100">
+                </div>
+            </div>
+        </section>
+        <section class="iteraccio">
+            <canvas id="myChart"></canvas>
         </section>
     </main>
     <footer>
@@ -127,7 +155,11 @@
         </div>
     </footer>
 
+    <script src="sobre_nosaltres.js"></script>
     <script src="../script.js"></script>
+    <!-- ChartJS -->
+    <script src="interaccio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 
 </html>

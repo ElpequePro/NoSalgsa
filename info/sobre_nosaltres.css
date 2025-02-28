@@ -1,3 +1,7 @@
+:root {
+    --width: 500px;
+}
+
 /* MAIN */
 
 main {
@@ -75,6 +79,136 @@ header {
                 font-size: 1.3em;
             }
         }
+    }
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+
+    h2 {
+        width: 100%;
+    }
+
+    & {
+        &:hover div:not(div div) {
+            opacity: 1;
+        }
+
+        & div:not(div div) {
+            opacity: .5;
+            transition: .5s;
+        }
+    }
+
+    iframe {
+        width: var(--width);
+        aspect-ratio: 16/9;
+        border-radius: 8px;
+        box-shadow: 0 0 32px #777;
+        margin-bottom: 12px;
+        pointer-events: none;
+    }
+
+    div {
+        width: var(--width);
+        color: white;
+        display: flex;
+        align-items: center;
+        height: 40px;
+        gap: 8px;
+
+        span {
+            padding: 8px;
+            border-radius: 50%;
+            transition: .3s;
+            cursor: pointer;
+            user-select: none;
+
+            &:hover {
+                background-color: #333;
+            }
+        }
+
+        input {
+            flex: 1;
+            cursor: grab;
+
+            &:active {
+                cursor: grabbing;
+            }
+        }
+
+        p {
+            width: 120px;
+            text-align: center;
+            margin: 0;
+        }
+
+        div:nth-child(2) input {
+            appearance: none;
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: transparent;
+
+            &::-moz-range-thumb {
+                height: 100%;
+                background-color: transparent;
+                border: none;
+            }
+
+            &::-moz-range-progress {
+                height: 100%;
+                background-color: #fff;
+            }
+
+            &::-moz-range-track {
+                height: 100%;
+                background-color: #ffffff66;
+            }
+        }
+
+        div:nth-child(3) {
+            flex-direction: column-reverse;
+            position: relative;
+            width: fit-content;
+            justify-content: center;
+
+            input {
+                appearance: none;
+                rotate: -90deg;
+                position: absolute;
+                width: 120px;
+                top: -200%;
+                height: 24px;
+                background-color: transparent;
+                overflow: hidden;
+                border-radius: 20px;
+
+                &::-moz-range-thumb {
+                    height: 100%;
+                    background-color: transparent;
+                    border: none;
+                }
+
+                &::-moz-range-progress {
+                    height: 100%;
+                    background-color: #fff;
+                }
+
+                &::-moz-range-track {
+                    height: 100%;
+                    background-color: #ffffff66;
+                }
+            }
+        }
+    }
+
+    .hidden {
+        display: none;
     }
 }
 
