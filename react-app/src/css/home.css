@@ -1,0 +1,251 @@
+/* NAV */
+
+nav {
+    user-select: none;
+}
+
+/* MAIN */
+
+.main-div.home {
+    header {
+        height: 100vh !important;
+
+        h1 {
+            font-weight: 500;
+        }
+
+        button {
+            padding: 0 !important;
+
+            .Link {
+                padding: 8px 32px;
+            }
+
+            &:nth-child(2) .Link {
+                color: black;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    section.explanation {
+        height: fit-content;
+        padding: 24px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+            margin-top: 3em;
+            font-size: 2.5em;
+        }
+
+        p {
+            margin-top: 24px;
+            font-size: 20px;
+        }
+
+        div.floating-div {
+            position: absolute;
+            display: flex;
+            background-color: #222;
+            box-shadow: 0 0 30px rgba(37, 37, 37, .8);
+            padding: 16px;
+            justify-content: space-evenly;
+            width: 60%;
+            min-width: 500px;
+            max-width: 750px;
+            top: calc(-80px - 16px*2);
+            border-radius: 20px;
+            height: fit-content !important;
+
+            i {
+                border-radius: 50%;
+                font-size: 52px;
+                aspect-ratio: 1/1;
+                display: flex;
+                width: 80px;
+                aspect-ratio: 1/1;
+                justify-content: center;
+                align-items: center;
+            }
+
+            p {
+                font-size: 1em;
+                text-align: center;
+            }
+
+            div {
+                flex-direction: column;
+                gap: 8px;
+                width: 20%;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    section.side-img {
+        position: relative;
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+        height: 400px;
+        justify-content: space-between;
+
+        div {
+            width: 60%;
+
+            h2 {
+                font-size: 3em;
+                margin-bottom: 24px;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+        }
+
+        div:nth-child(2) {
+            height: 100%;
+            background: linear-gradient(0deg, #11111166 0%, #11111166 100%), url('https://kboosting.com/img/23270/c/campaign-300x300.png');
+            background-position: center bottom;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width: 400px;
+            box-shadow: inset 0 0 0 #111;
+        }
+
+        button {
+            border: 1px solid white;
+            border-radius: 24px;
+            background: none;
+            color: white;
+            margin-top: 12px;
+            font-size: 16px;
+
+            .Link {
+                padding: 12px 20px;
+            }
+
+            &:hover {
+                background-color: var(--vermell);
+                border: 1px solid var(--vermell);
+            }
+        }
+    }
+
+    section.blocks {
+        display: grid;
+        grid-template-columns: 60% 30%;
+        grid-template-rows: 13em 13em;
+        column-gap: 40px;
+        row-gap: 40px;
+        padding: 40px;
+        place-content: center;
+        margin-bottom: 20px;
+
+        div {
+            border-radius: 12px;
+            transition: .3s;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+            &:nth-child(1) {
+                background-image: linear-gradient(0deg, #111111dd 0%, #11111150 100%), url('https://i.ytimg.com/vi/9-EgvyLRYo4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAmSaNnJ9OXjNMOhlv_hrouzeDL-A');
+                background-size: cover;
+                background-position: center center;
+            }
+
+            &:nth-child(2) {
+                background-image: linear-gradient(0deg, #111111dd 0%, #11111150 100%), url('https://i.ytimg.com/vi/s1AyjcYAxPg/maxresdefault.jpg');
+                background-size: cover;
+                background-position: center center;
+            }
+
+            &:nth-child(3) {
+                background-image: linear-gradient(0deg, #111111dd 0%, #11111150 100%), url('https://i.pinimg.com/originals/54/6b/a2/546ba29fb6559d4bcd9fbeabada9d9ce.jpg');
+                background-size: cover;
+                background-position: center center;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+/* ALTRES */
+
+/* MEDIA */
+
+@media screen and (max-width: 730px) {
+    .side-img div:nth-child(2) {
+        display: none;
+    }
+
+    .blocks {
+        display: flex !important;
+        flex-direction: column;
+
+        div {
+            width: 100% !important;
+            aspect-ratio: 4/2;
+
+            &:hover {
+                transform: none !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .floating-div {
+        left: 0 !important;
+        width: 100% !important;
+        border-radius: 0 !important;
+
+        div {
+            font-size: 1em !important;
+            width: 100% !important;
+
+            i {
+                font-size: 2em !important;
+                width: 2em !important;
+
+                &:nth-child(2) {
+                    margin-top: -70px !important;
+                }
+            }
+
+            p {
+                margin-top: 0;
+                padding: 0 8px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .floating-div {
+        display: none !important;
+    }
+
+    .explanation h2 {
+        margin-top: 40px !important;
+    }
+}
+
+/* ANIMACIONS */

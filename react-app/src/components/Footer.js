@@ -1,0 +1,44 @@
+import React from 'react';
+
+function Footer() {
+    return (
+        <footer>
+            <div class="main-div">
+                <div class="left">
+                    <div>
+                        <h3>Jocs més jugats</h3>
+                        <ul>
+                            <li>Minecraft</li>
+                            <li>Fortnite</li>
+                            <li>League of Legends</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Contacte</h3>
+                        <ul>
+                            <li>666 09 11 69</li>
+                            <li>Pearl Harbor, Hawaii, USA</li>
+                            <li>C.P. 96860</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <h3>Tenda</h3>
+                    <ul>
+                        <li onclick="window.location.href='shop/productes.html'">Productes</li>
+                        <li onclick="window.location.href='shop/categories.html'">Categories</li>
+                    </ul>
+                    <div>
+                        <input type="text" placeholder="Nom del producte..." />
+                        <i class="bi bi-search"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2024 - No Salgo de Casa "NoSalgsa" fet per Pol Poblet Pallisé</p>
+            </div>
+        </footer>
+    );
+}
+
+export default Footer;

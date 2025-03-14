@@ -5,11 +5,11 @@ function resetSearch() {
 // MENU
 
 function menu(name) {
-    if (name == 'open') {
+    if (name === 'open') {
         document.querySelector('aside').style.width = '400px';
         document.querySelector('aside').style.marginLeft = '0';
         document.body.style.backgroundColor = 'rgba(13, 13, 13, .5)';
-    } if (name == 'close') {
+    } if (name === 'close') {
         document.querySelector('aside').style.width = '0';
         document.querySelector('aside').style.marginLeft = '-20%';
         document.body.setAttribute('background-color', 'none', 'important');
@@ -19,10 +19,10 @@ function menu(name) {
 
 // SEARCH
 
-search = document.getElementById('search_bar');
+const search = document.getElementById('search_bar');
 
 function btnSearch() {
-    div = document.getElementById('search_div');
+    const div = document.getElementById('search_div');
     div.classList.toggle('active');
     if (div.classList.contains('active')) {
         search.focus();
@@ -34,7 +34,7 @@ search.addEventListener('keydown', () => {
 })
 
 search.addEventListener('keypress', function (e) {
-    if (e.key == 'Enter') {
+    if (e.key === 'Enter') {
         localStorage.setItem('load', 'true');
         window.location.replace('../../shop/productes.html');
     }
@@ -43,18 +43,18 @@ search.addEventListener('keypress', function (e) {
 // COOKIES
 
 function checkCookies() {
-    if (localStorage.getItem('cookies') == 'true') {
+    if (localStorage.getItem('cookies') === 'true') {
         console.log('Cookies validades!');
         console.log('Per deshabilitar-les escriu: localStorage.setItem("cookies", "false");');
     } else {
         document.querySelector('body').style = 'pointer-events: none; overflow: hidden;';
 
-        cookie_div = document.createElement('article');
-        cookie_text_block = document.createElement('div');
-        cookie_title = document.createElement('h1');
-        cookie_p = document.createElement('p');
-        cookie_btn_no = document.createElement('button');
-        cookie_btn_yes = document.createElement('button');
+        const cookie_div = document.createElement('article');
+        const cookie_text_block = document.createElement('div');
+        const cookie_title = document.createElement('h1');
+        const cookie_p = document.createElement('p');
+        const cookie_btn_no = document.createElement('button');
+        const cookie_btn_yes = document.createElement('button');
 
         cookie_div.id = 'cookie_div';
         cookie_text_block.id = 'cookie_text_block';
@@ -80,11 +80,11 @@ function checkCookies() {
 }
 
 function cookieChange(name) {
-    if (name == 'false') {
+    if (name === 'false') {
         console.log('cookies: false');
         document.getElementById('cookie_div').style.display = 'none';
         document.querySelector('body').style = 'pointer-events: auto; overflow: auto;';
-    } else if (name == 'true') {
+    } else if (name === 'true') {
         localStorage.setItem('cookies', 'true');
         document.getElementById('cookie_div').style.display = 'none';
         document.querySelector('body').style = 'pointer-events: auto; overflow: auto;';

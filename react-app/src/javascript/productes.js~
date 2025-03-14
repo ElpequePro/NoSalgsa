@@ -5,16 +5,16 @@ function onload() {
 }
 
 function searchGame() {
-    if (localStorage.getItem('load') == 'true') {
+    if (localStorage.getItem('load') === 'true') {
         localStorage.setItem('load', '')
-        query = localStorage.getItem('query');
+        const query = localStorage.getItem('query');
         console.log(query);
 
-        if (query == 'hola') {
+        if (query === 'hola') {
             console.log('tes');
         }
 
-        for (q = 0; q < num_jocs; q++) {
+        for (var q = 0; q < num_jocs; q++) {
             document.getElementById(q).style.display = 'none';
 
             if (jocs[q]["name"].toLowerCase().includes(query.toLowerCase())) {
@@ -25,7 +25,7 @@ function searchGame() {
     }
 }
 
-jocs = {
+const jocs = {
     0: {
         src: "https://img.asmedia.epimg.net/resizer/v2/https%3A%2F%2Fstatic.prisa.com%2Fgamepedia%2Fimagenes%2F2023%2F7%2F14%2Fgame_cover%2F719758674.jpg?auth=f091ae560052c2cc5c9c62b30411e43f296107098467e9301e7853eb6074f282&width=140&height=210&smart=true",
         name: "EA Sports FC24",
@@ -277,19 +277,19 @@ jocs = {
     }*/
 }
 
-num_jocs = 30; // Últim número +1
+const num_jocs = 30; // Últim número +1
 
 function addGames() {
-    list = document.getElementById('product_list');
+    const list = document.getElementById('product_list');
 
     console.log(jocs.length);
 
-    for (i = 0; i < num_jocs; i++) {
+    for (var i = 0; i < num_jocs; i++) {
         console.log(i);
-        div = document.createElement('article');
-        title = document.createElement('p');
-        p = document.createElement('p');
-        span = document.createElement('span');
+        const div = document.createElement('article');
+        const title = document.createElement('p');
+        const p = document.createElement('p');
+        const span = document.createElement('span');
 
         div.style.backgroundImage = 'url("' + jocs[i]['src'] + '")';
         div.setAttribute('decoding', 'async');
@@ -313,50 +313,50 @@ function addGames() {
 }
 
 function filterGenere(name) {
-    for (i = 0; i < num_jocs; i++) {
-        if (name == 'accio') {
+    for (var i = 0; i < num_jocs; i++) {
+        if (name === 'accio') {
             document.getElementsByClassName('accio')[i].classList.toggle('hideGenere');
-        } else if (name == 'aventura') {
+        } else if (name === 'aventura') {
             document.getElementsByClassName('aventura')[i].classList.toggle('hideGenere');
-        } else if (name == 'rpg') {
+        } else if (name === 'rpg') {
             document.getElementsByClassName('rpg')[i].classList.toggle('hideGenere');
-        } else if (name == 'terror') {
+        } else if (name === 'terror') {
             document.getElementsByClassName('terror')[i].classList.toggle('hideGenere');
-        } else if (name == 'fantasia') {
+        } else if (name === 'fantasia') {
             document.getElementsByClassName('fantasia')[i].classList.toggle('hideGenere');
-        } else if (name == 'puzzle') {
+        } else if (name === 'puzzle') {
             document.getElementsByClassName('puzzle')[i].classList.toggle('hideGenere');
-        } else if (name == 'esports') {
+        } else if (name === 'esports') {
             document.getElementsByClassName('esports')[i].classList.toggle('hideGenere');
-        } else if (name == 'estrategia') {
+        } else if (name === 'estrategia') {
             document.getElementsByClassName('estrategia')[i].classList.toggle('hideGenere');
         }
     }
 }
 
 function resetFilter() {
-    for (i = 0; i < num_jocs; i++) {
+    for (var i = 0; i < num_jocs; i++) {
         document.getElementById(i).classList.remove('hideGenere');
         document.getElementById(i).classList.remove('hideAny');
     }
 }
 
 function filterAny(name) {
-    primer = document.getElementById('range_min_number');
-    segon = document.getElementById('range_max_number');
-    exacte = document.getElementById('input_exacte');
+    const primer = document.getElementById('range_min_number');
+    const segon = document.getElementById('range_max_number');
+    const exacte = document.getElementById('input_exacte');
 
-    if (name == 'rang' && document.getElementById('rang').checked) {
-        for (i = 0; i < num_jocs; i++) {
+    if (name === 'rang' && document.getElementById('rang').checked) {
+        for (var i = 0; i < num_jocs; i++) {
             if (primer.value <= jocs[i]['any'] && segon.value >= jocs[i]['any']) {
                 document.getElementById(i).classList.remove('hideAny');
             } else {
                 document.getElementById(i).classList.add('hideAny');
             }
         }
-    } else if (name == 'exacte' && document.getElementById('exacte').checked) {
-        for (i = 0; i < num_jocs; i++) {
-            if (exacte.value == jocs[i]['any']) {
+    } else if (name === 'exacte' && document.getElementById('exacte').checked) {
+        for (var i = 0; i < num_jocs; i++) {
+            if (exacte.value === jocs[i]['any']) {
                 document.getElementById(i).classList.remove('hideAny');
             } else {
                 document.getElementById(i).classList.add('hideAny');
@@ -366,12 +366,12 @@ function filterAny(name) {
 }
 
 function floatingFilter(name) {
-    if (name == 'show') {
+    if (name === 'show') {
         document.getElementById('form').style.setProperty('left', '24px', 'important');
         document.getElementById('form').style.setProperty('width', '400px', 'important');
         document.getElementById('arrow_floating_filter').style.display = 'none';
         document.getElementById('cross_floating_filter').style.display = 'flex';
-    } else if (name == 'hide') {
+    } else if (name === 'hide') {
         document.getElementById('form').style.setProperty('left', '-20%', 'important');
         document.getElementById('form').style.setProperty('width', '0', 'important');
         document.getElementById('arrow_floating_filter').style.display = 'flex';
@@ -382,7 +382,7 @@ function floatingFilter(name) {
 // Expand block
 
 document.getElementById('product_list').addEventListener('click', e => {
-    if (e.target.tagName.toLowerCase() == 'article') {
+    if (e.target.tagName.toLowerCase() === 'article') {
         e.target.classList.remove('product_hover');
         e.target.style = 'position: absolute; width: 90%; height: 90%; top: 5%; left: 5%; z-index: 999999999; cursor: auto;';
         e.target.querySelector('p.title').style = 'opacity: 1; left: 40px; top: 40px; font-size: 3em; transition: none; margin-right: 120px;';
@@ -404,8 +404,8 @@ document.getElementById('product_list').addEventListener('click', e => {
         }
     }
 
-    parent = e.target.parentNode;
-    if (e.target.tagName.toLowerCase() == 'span') {
+    const parent = e.target.parentNode;
+    if (e.target.tagName.toLowerCase() === 'span') {
         parent.classList.add('product_hover');
         parent.style = 'position: relative; flex: 1 1 180px; z-index: none;';
         parent.style.setProperty('background-image', 'url("' + jocs[parent.id]['src'] + '")');

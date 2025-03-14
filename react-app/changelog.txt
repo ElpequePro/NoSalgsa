@@ -136,3 +136,7 @@ Divendres 28 de Febrer de 2025
     Afegir plantilla pel video
     Crear la infografia interactiva (chart.js)
     (El mapa ja estava posat)
+
+Dijous 13 de Març de 2025
+    Començar el translladament del projecte a React.js
+        L'objectiu és tindre més fluidesa
