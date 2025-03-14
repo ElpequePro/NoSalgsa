@@ -19,7 +19,7 @@ function Categories() {
 
     function categories(name) {
         if (nov && coll && desc && subs) {
-            if (name == 'novetats') {
+            if (name === 'novetats') {
                 nov.style.display = 'flex';
                 coll.style.display = 'none';
                 desc.style.display = 'none';
@@ -28,7 +28,7 @@ function Categories() {
                 document.getElementById('colleccions').classList.remove('active');
                 document.getElementById('descomptes').classList.remove('active');
                 document.getElementById('subscripcions').classList.remove('active');
-            } else if (name == 'colleccions') {
+            } else if (name === 'colleccions') {
                 nov.style.display = 'none';
                 coll.style.display = 'flex';
                 desc.style.display = 'none';
@@ -37,7 +37,7 @@ function Categories() {
                 document.getElementById('colleccions').classList.add('active');
                 document.getElementById('descomptes').classList.remove('active');
                 document.getElementById('subscripcions').classList.remove('active');
-            } else if (name == 'descomptes') {
+            } else if (name === 'descomptes') {
                 nov.style.display = 'none';
                 coll.style.display = 'none';
                 desc.style.display = 'flex';
@@ -46,7 +46,7 @@ function Categories() {
                 document.getElementById('colleccions').classList.remove('active');
                 document.getElementById('descomptes').classList.add('active');
                 document.getElementById('subscripcions').classList.remove('active');
-            } else if (name == 'subscripcions') {
+            } else if (name === 'subscripcions') {
                 nov.style.display = 'none';
                 coll.style.display = 'none';
                 desc.style.display = 'none';

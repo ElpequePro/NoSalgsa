@@ -1,8 +1,59 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
+// import LineChart from 'react-linechart';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import '../css/about-us.css';
 
 function SobreNosaltres() {
+
+    // https://www.visualcapitalist.com/game-console-launch-prices-adjusted-for-inflation-1975-2024/
+    // Console prices
+    const consoleData = [
+        {
+            // Sony
+            color: "blue",
+            points: [
+                { x: 1995, y: 299 },
+                { x: 2000, y: 299 },
+                { x: 2005, y: 249 },
+                { x: 2006, y: 499 },
+                { x: 2012, y: 249 },
+                { x: 2013, y: 399 },
+                { x: 2020, y: 499 },
+            ],
+        },
+        {
+            // Nintendo
+            color: "red",
+            points: [
+                { x: 1985, y: 199 },
+                { x: 1989, y: 89 },
+                { x: 1991, y: 199 },
+                { x: 1995, y: 179 },
+                { x: 1996, y: 199 },
+                { x: 1998, y: 79 },
+                { x: 2001, y: 199 },
+                { x: 2001, y: 79 },
+                { x: 2004, y: 149 },
+                { x: 2006, y: 249 },
+                { x: 2011, y: 249 },
+                { x: 2012, y: 349 },
+                { x: 2017, y: 299 },
+                { x: 2021, y: 349 },
+            ],
+        }, {
+            // Microsoft
+            color: "green",
+            points: [
+                { x: 2001, y: 299 },
+                { x: 2005, y: 399 },
+                { x: 2013, y: 499 },
+                { x: 2020, y: 499 },
+                // { x: 2020, y: 299 },
+            ],
+        },
+    ];
+
     return (
         <main>
             <header>
@@ -57,7 +108,15 @@ function SobreNosaltres() {
             </section>
             <section className="iteraccio">
                 <h2>Interacció</h2>
-                <canvas id="myChart"></canvas>
+                <LineChart
+                    series={consoleData}
+                    XAxis={{ title: "Year" }}
+                    YAxis={{ title: "Price", min: 0 }} // Set min value for y-axis
+                >
+                    {consoleData.map((series, index) => (
+                        <Line key={index} type="monotone" dataKey="y" data={series.points} stroke={series.color} />
+                    ))}
+                </LineChart>
             </section>
         </main>
     );

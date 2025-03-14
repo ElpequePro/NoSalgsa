@@ -32,7 +32,7 @@ nav {
     background-color: rgba(40, 40, 40, .5) !important;
     backdrop-filter: blur(4px) !important;
     display: flex !important;
-    position: sticky;
+    position: sticky !important;
     top: 0;
     z-index: 999;
     height: 78px;
