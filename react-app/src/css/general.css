@@ -13,7 +13,7 @@ https://cdn.dribbble.com/userupload/6134126/file/still-9867ff36accd97ccc2a1e4800
 }
 
 :root {
-    --gris: #3E3636;
+    --gris: #333;
     --vermell: #D72323;
     --vermell-hover: #a70b0b;
     --vermell-fosc: #720606;
@@ -244,7 +244,6 @@ header {
     color: white;
     flex-direction: column;
     text-align: center;
-    padding: 0 120px;
 
     p {
         color: var(--vermell);

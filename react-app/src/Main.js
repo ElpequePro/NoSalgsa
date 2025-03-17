@@ -25,6 +25,8 @@ const Main = () => {
                 return 'categories';
             case '/contact':
                 return 'contact';
+            case '/contact/privacy-policy':
+                return 'privacy-policy';
             case '/about-us':
                 return 'about-us';
             default:
@@ -35,13 +37,14 @@ const Main = () => {
     return (
         <>
             <Navigation />
-                <Routes>
-                    <Route path="/" element={<Content routeClass={getRouteClass()} />} />
-                    <Route path="/shop" element={<Content routeClass={getRouteClass()} />} />
-                    <Route path="/categories" element={<Content routeClass={getRouteClass()} />} />
-                    <Route path="/contact" element={<Content routeClass={getRouteClass()} />} />
-                    <Route path="/about-us" element={<Content routeClass={getRouteClass()} />} />
-                </Routes>
+            <Routes>
+                <Route path="/" element={<Content routeClass={getRouteClass()} />} />
+                <Route path="/shop" element={<Content routeClass={getRouteClass()} />} />
+                <Route path="/categories" element={<Content routeClass={getRouteClass()} />} />
+                <Route path="/contact" element={<Content routeClass={getRouteClass()} />} />
+                <Route path="/contact/privacy-policy" element={<Content routeClass={getRouteClass()} />} />
+                <Route path="/about-us" element={<Content routeClass={getRouteClass()} />} />
+            </Routes>
             <Footer />
         </>
     );

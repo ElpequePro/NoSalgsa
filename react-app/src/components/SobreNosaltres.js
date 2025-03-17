@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 // import LineChart from 'react-linechart';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
@@ -6,12 +6,14 @@ import '../css/about-us.css';
 
 function SobreNosaltres() {
 
+    // Interacció (chart.js)
+
     // https://www.visualcapitalist.com/game-console-launch-prices-adjusted-for-inflation-1975-2024/
     // Console prices
     const consoleData = [
         {
             // Sony
-            color: "blue",
+            color: "#0070D1",
             points: [
                 { x: 1995, y: 299 },
                 { x: 2000, y: 299 },
@@ -24,7 +26,7 @@ function SobreNosaltres() {
         },
         {
             // Nintendo
-            color: "red",
+            color: "#db0111",
             points: [
                 { x: 1985, y: 199 },
                 { x: 1989, y: 89 },
@@ -41,15 +43,15 @@ function SobreNosaltres() {
                 { x: 2017, y: 299 },
                 { x: 2021, y: 349 },
             ],
-        }, {
+        },
+        {
             // Microsoft
-            color: "green",
+            color: "#0e760d",
             points: [
                 { x: 2001, y: 299 },
                 { x: 2005, y: 399 },
                 { x: 2013, y: 499 },
                 { x: 2020, y: 499 },
-                // { x: 2020, y: 299 },
             ],
         },
     ];

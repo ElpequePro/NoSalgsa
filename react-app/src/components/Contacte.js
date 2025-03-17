@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 import '../css/contact.css';
 
@@ -41,8 +42,8 @@ function Contacte() {
                     <textarea placeholder="*Missatge" name="missatge" id="missatge" required></textarea>
                     <div>
                         <input type="checkbox" id="privacitat" />
-                        <label for="privacitat">He llegit i accepto la <a href="politica_privacitat.html">política de
-                            privacitat</a></label>
+                        <label for="privacitat">He llegit i accepto la <Link to={"/contact/privacy-policy"}>política de
+                            privacitat</Link></label>
                     </div>
                     <input type="submit" value="SUBMIT" id="submit" />
                     <input type="reset" value="reset" />
