@@ -127,7 +127,7 @@ Dilluns 16 de Desembre de 2024
 
 -------
 
-Projecte RA3 i RA4 - Elements multimèdia per a la vostra web
+Projecte RA3 i RA4 - Elements multimèdia per a la vostra web (24-01-2025 - 16-03-2025)
 
 -------
 
@@ -140,3 +140,15 @@ Divendres 28 de Febrer de 2025
 Dijous 13 de Març de 2025
     Començar el translladament del projecte a React.js
         L'objectiu és tindre més fluidesa
+
+-------
+
+ENTREGA
+
+-------
+
+Dilluns 17 de Març de 2025
+    Totes les pàgines transformades a format React.js, només falta:
+        SobreNosaltres -> vídeo i gràfic
+        Productes -> llista de jocs
+        També falta perfeccionar CSS en totes les pàgines
