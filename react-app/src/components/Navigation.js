@@ -86,7 +86,7 @@ function Navigation() {
                             </ul>
                         </li>
                         <li><Link className="Link" to='/contact'>Contacte</Link></li>
-                        <li><Link className="Link" to='/about-us'>Sobre Nosaltes</Link></li>
+                        <li><Link className="Link" to='/about-us'>Sobre Nosaltres</Link></li>
                     </ul>
                 </div>
                 <div className="search" id="search_div">
@@ -98,18 +98,18 @@ function Navigation() {
                 <h2>INDEX</h2>
                 <hr />
                 <ul>
-                    <li><Link to={"/"}>Inici</Link></li>
+                    <li><Link className="Link aside" to={"/"}>Inici</Link></li>
                     <li className="li_tenda">
-                        <Link to={"/shop"}>Tenda</Link>
+                        <Link className="Link aside" to={"/shop"}>Tenda</Link>
                         <ul>
-                            <li><Link to={'/shop'}>Productes</Link></li>
-                            <li><Link to={'/categories'}>Categories</Link></li>
+                            <li><Link className="Link aside" to={'/shop'}>Productes</Link></li>
+                            <li><Link className="Link aside" to={'/categories'}>Categories</Link></li>
                         </ul>
                     </li>
-                    <li><Link to={'/contact'}>Contacte</Link></li>
-                    <li><Link to={'/about-us'}>Sobre Nosaltres</Link></li>
+                    <li><Link className="Link aside" to={'/contact'}>Contacte</Link></li>
+                    <li><Link className="Link aside" to={'/about-us'}>Sobre Nosaltres</Link></li>
                 </ul>
-                <i className="bi bi-x" onClick={menu('close')}></i>
+                <i className="bi bi-x" onClick={() => menu('close')}></i>
             </aside>
         </div >
     );
