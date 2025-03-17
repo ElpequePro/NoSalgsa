@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router';
 
 import carousel1 from '../img/carousel1.png';
@@ -14,58 +14,42 @@ function Home() {
   const bgcolor = "linear-gradient(0deg, rgba(17, 17, 17, .7) 0%, rgba(51, 51, 51, .5) 100%)";
   const list = [carousel1, carousel2, carousel3, carousel4];
 
-  const carousel = (car) => {
-    car.style.background = `${bgcolor}, url("${list[0]}")`;
-    car.style.backgroundSize = 'cover';
-    car.style.backgroundPosition = 'center center';
-  }
+  const carousel = useCallback((car) => {
+    if (car) {
+      car.style.background = `${bgcolor}, url("${list[0]}")`;
+      car.style.backgroundSize = 'cover';
+      car.style.backgroundPosition = 'center center';
+    }
+  }, []);
 
   let i = 0;
 
-  function changeCarousel(direction) {
+  const changeCarousel = useCallback((direction) => {
     if (car) {
       if (direction === 'left') {
-        if (i === 0) {
-          i = list.length - 1;
-        } else {
-          i--;
-        }
-
-        car.style.background = `${bgcolor}, url("${list[i]}")`;
-        car.style.backgroundSize = 'cover';
-        car.style.backgroundPosition = 'center center';
-
-        console.log('Left: ' + i);
-
+        i = (i === 0) ? list.length - 1 : i - 1;
       } else if (direction === 'right') {
-        if (i === list.length - 1) {
-          i = 0;
-        } else {
-          i++;
-        }
-
-        car.style.background = `${bgcolor}, url("${list[i]}")`;
-        car.style.backgroundSize = 'cover';
-        car.style.backgroundPosition = 'center center';
-
-        console.log('Right: ' + i);
+        i = (i === list.length - 1) ? 0 : i + 1;
       }
+
+      car.style.background = `${bgcolor}, url("${list[i]}")`;
+      car.style.backgroundSize = 'cover';
+      car.style.backgroundPosition = 'center center';
     }
-  }
+  }, []);
 
   useEffect(() => {
-    setCar(document.getElementById("carousel"));
+    const carElement = document.getElementById("carousel");
 
-    if (car) {
-      setCar(car);
-      carousel(car);
-    }
+    setCar(carElement);
+    carousel(carElement);
 
     const timer = setInterval(() => {
       changeCarousel("right");
     }, 5000);
+
     return () => clearInterval(timer);
-  });
+  }, []);
 
   return (
     <main>
