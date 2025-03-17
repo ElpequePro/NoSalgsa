@@ -1,9 +1,9 @@
 import React from "react";
 
-import Navigation from "./components/Navigation";
 import { Route, Routes } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
+import Navigation from "./components/Navigation";
 import Content from './Content';
 import Footer from './components/Footer';
 
@@ -42,7 +42,7 @@ const Main = () => {
                 <Route path="/shop" element={<Content routeClass={getRouteClass()} />} />
                 <Route path="/categories" element={<Content routeClass={getRouteClass()} />} />
                 <Route path="/contact" element={<Content routeClass={getRouteClass()} />} />
-                <Route path="/contact/privacy-policy" element={<Content routeClass={getRouteClass()} />} />
+                <Route path="/contact/privacy-policy" element={<Content routeClass="privacy-policy" />} />
                 <Route path="/about-us" element={<Content routeClass={getRouteClass()} />} />
             </Routes>
             <Footer />
