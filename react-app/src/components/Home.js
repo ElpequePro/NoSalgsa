@@ -1,80 +1,72 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router';
 
+import carousel1 from '../img/carousel1.png';
+import carousel2 from '../img/carousel2.png';
+import carousel3 from '../img/carousel3.png';
+import carousel4 from '../img/carousel4.png';
+
 import '../css/home.css';
 
 function Home() {
-  /*
-    const [car, setCar] = useState(null);
-  
-    const bgcolor = "linear-gradient(0deg, rgba(17, 17, 17, .7) 0%, rgba(51, 51, 51, .5) 100%)";
-    const list = ["../img/carousel1.png", "../img/carousel2.png", "../img/carousel3.png", "../img/carousel4.png"];
-  
-    const carousel = (car) => {
-      if (car) {
-        car.style.background = `${bgcolor}, url("${list[0]}")`;
+  const [car, setCar] = useState(null);
+
+  const bgcolor = "linear-gradient(0deg, rgba(17, 17, 17, .7) 0%, rgba(51, 51, 51, .5) 100%)";
+  const list = [carousel1, carousel2, carousel3, carousel4];
+
+  const carousel = (car) => {
+    car.style.background = `${bgcolor}, url("${list[0]}")`;
+    car.style.backgroundSize = 'cover';
+    car.style.backgroundPosition = 'center center';
+  }
+
+  let i = 0;
+
+  function changeCarousel(direction) {
+    if (car) {
+      if (direction === 'left') {
+        if (i === 0) {
+          i = list.length - 1;
+        } else {
+          i--;
+        }
+
+        car.style.background = `${bgcolor}, url("${list[i]}")`;
         car.style.backgroundSize = 'cover';
         car.style.backgroundPosition = 'center center';
-      }
-    }
-  
-    var i = 0;
-  
-    const changeCarousel = (direction) => {
-      if (car) {
-        if (direction === 'left') {
-          if (i === 0) {
-            i = list.length - 1;
-          } else {
-            i--;
-          }
-  
-          car.style.background = `${bgcolor}, url("${list[i]}")`;
-          car.style.backgroundSize = 'cover';
-          car.style.backgroundPosition = 'center center';
-  
-          clearInterval(timer);
-          const timer = setInterval(function () {
-            changeCarousel('right');
-          }, 5000);
-  
-        } else if (direction === 'right') {
-          if (i === list.length - 1) {
-            i = 0;
-          } else {
-            i++;
-          }
-  
-          car.style.background = `${bgcolor}, url("${list[i]}")`;
-          car.style.backgroundSize = 'cover';
-          car.style.backgroundPosition = 'center center';
-  
-          clearInterval(timer);
-          const timer = setInterval(function () {
-            changeCarousel('right');
-          }, 5000);
-  
+
+        console.log('Left: ' + i);
+
+      } else if (direction === 'right') {
+        if (i === list.length - 1) {
+          i = 0;
+        } else {
+          i++;
         }
+
+        car.style.background = `${bgcolor}, url("${list[i]}")`;
+        car.style.backgroundSize = 'cover';
+        car.style.backgroundPosition = 'center center';
+
+        console.log('Right: ' + i);
       }
     }
-  
-    setInterval(function () {
-      changeCarousel('right');
-    }, 5000);
-  
-    useEffect(() => {
-      const car = document.getElementById("carousel")
-      if (car) {
-        setCar(car);
-        carousel(car);
-      }
-    })
-  */
-
-  const changeCarousel = (direction) => {
-
   }
-  
+
+  useEffect(() => {
+    setCar(document.getElementById("carousel"));
+
+    if (car) {
+      setCar(car);
+      carousel(car);
+    }
+
+    const timer = setInterval(() => {
+      changeCarousel("right");
+    }, 5000);
+    return () => clearInterval(timer);
+  });
+
   return (
     <main>
       <header id="carousel">
