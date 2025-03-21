@@ -1,40 +1,19 @@
 // server.js
+
 const express = require('express');
-const fs = require('fs');
 const path = require('path');
-
+const cors = require('cors');
 const app = express();
-const PORT = 3001; // You can change this to any port you prefer
+const PORT = 3001;
 
-// Middleware to parse JSON requests
-app.use(express.json());
+app.use(cors())
 
-// Endpoint to get all users
-app.get('/api', (req, res) => {
-  fs.readFile(path.join(__dirname, 'jocs.json'), 'utf8', (err, data) => {
-    if (err) {
-      return res.status(500).json({ error: 'Failed to read data' });
-    }
-    const jsonData = JSON.parse(data);
-    res.json(jsonData.users);
-  });
+app.get('/shop', (req, res) => {
+  res.sendFile(path.join(__dirname, 'shopGames.json'));
 });
 
-// Endpoint to get a user by ID
-app.get('/api/:id', (req, res) => {
-  const userId = parseInt(req.params.id, 10);
-  fs.readFile(path.join(__dirname, 'jocs.json'), 'utf8', (err, data) => {
-    if (err) {
-      return res.status(500).json({ error: 'Failed to read data' });
-    }
-    const jsonData = JSON.parse(data);
-    const user = jsonData.users.find(u => u.id === userId);
-    if (user) {
-      res.json(user);
-    } else {
-      res.status(404).json({ error: 'User not found' });
-    }
-  });
+app.get('/categories', (req, res) => {
+  res.sendFile(path.join(__dirname, 'categoriesGames.json'));
 });
 
 // Start the server

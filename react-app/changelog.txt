@@ -154,6 +154,7 @@ Dilluns 17 de Març de 2025
         També falta perfeccionar CSS en totes les pàgines
 
 Divendres 21 de Març de 2025
+    Crear una API pels jocs
     Exercici 1: Implementar text alternatiu en imatges
         Afegir text als "alt" de les imatges
     Exercici 2: Millorar contrast de colors (text -> 18:1, títol -> 3:1)

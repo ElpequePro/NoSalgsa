@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
         <footer>
-            <div class="main-div">
-                <div class="left">
+            <div className="main-div">
+                <div className="left">
                     <div>
                         <h3>Jocs més jugats</h3>
                         <ul>
@@ -22,19 +23,19 @@ function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div class="right">
+                <div className="right">
                     <h3>Tenda</h3>
                     <ul>
-                        <li onclick="window.location.href='shop/productes.html'">Productes</li>
-                        <li onclick="window.location.href='shop/categories.html'">Categories</li>
+                        <li><Link className='Link' to={'/shop'}>Productes</Link></li>
+                        <li><Link className='Link' to={'/categories'}>Categories</Link></li>
                     </ul>
                     <div>
                         <input type="text" placeholder="Nom del producte..." />
-                        <i class="bi bi-search"></i>
+                        <i className="bi bi-search"></i>
                     </div>
                 </div>
             </div>
-            <div class="copyright">
+            <div className="copyright">
                 <p>Copyright &copy; 2024 - No Salgo de Casa "NoSalgsa" fet per Pol Poblet Pallisé</p>
             </div>
         </footer>
