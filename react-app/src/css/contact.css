@@ -60,6 +60,11 @@
                 padding-left: 12px;
                 background-color: white;
                 border: none;
+
+                &:focus {
+                    outline: 1px solid var(--vermell);
+                    background-color: #ddd;
+                }
             }
 
             div {
@@ -112,6 +117,10 @@
                 width: 32px;
                 margin: 0;
                 cursor: pointer;
+            }
+
+            a:focus {
+                color: var(--vermell);
             }
         }
     }

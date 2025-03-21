@@ -132,7 +132,7 @@ Projecte RA3 i RA4 - Elements multimèdia per a la vostra web (24-01-2025 - 16-0
 -------
 
 Divendres 28 de Febrer de 2025
-    Afegir carousel (ja estava afegit - 7 Feb)
+    Afegir carousel (ja estava creat - 7 Feb)
     Afegir plantilla pel video
     Crear la infografia interactiva (chart.js)
     (El mapa ja estava posat)
@@ -152,3 +152,10 @@ Dilluns 17 de Març de 2025
         SobreNosaltres -> vídeo i gràfic
         Productes -> llista de jocs
         També falta perfeccionar CSS en totes les pàgines
+
+Divendres 21 de Març de 2025
+    Exercici 1: Implementar text alternatiu en imatges
+        Afegir text als "alt" de les imatges
+    Exercici 2: Millorar contrast de colors (text -> 18:1, títol -> 3:1)
+    Exercici 3: Navegació per teclat en formularis
+        Afegir labels al formulari

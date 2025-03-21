@@ -69,7 +69,7 @@ function SobreNosaltres() {
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div className="profile">
-                    <img src="https://i.imgflip.com/5imrkq.jpg?a480912" alt="" />
+                    <img src="https://i.imgflip.com/5imrkq.jpg?a480912" alt="Imatge autor" />
                     <h2>Pol Poblet Pallisé</h2>
                     <p>Dissenyador "Sigma"</p>
                 </div>

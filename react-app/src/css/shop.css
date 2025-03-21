@@ -1,10 +1,12 @@
 /* MAIN */
 .main-div.shop {
     main {
-        padding: 40px;
+        padding: 40px !important;
         display: flex;
         gap: 20px;
+        min-height: fit-content;
         height: calc(100vh - 78px);
+        flex-direction: row;
     }
 
     form.floating-div {
@@ -356,7 +358,7 @@
         padding: 40px 56px;
     }
 
-    .floating-div {
+    .shop .floating-div {
         position: absolute !important;
         left: -20%;
         z-index: 888;

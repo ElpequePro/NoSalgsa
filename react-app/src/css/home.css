@@ -159,13 +159,13 @@ nav {
             justify-content: end;
 
             &:nth-child(1) {
-                background-image: linear-gradient(0deg, #111111dd 0%, #11111150 100%), url('https://i.ytimg.com/vi/9-EgvyLRYo4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAmSaNnJ9OXjNMOhlv_hrouzeDL-A');
+                background-image: linear-gradient(0deg, #111111dd 0%, #11111150 100%), url('https://i.ytimg.com/vi/s1AyjcYAxPg/maxresdefault.jpg');
                 background-size: cover;
                 background-position: center center;
             }
 
             &:nth-child(2) {
-                background-image: linear-gradient(0deg, #111111dd 0%, #11111150 100%), url('https://i.ytimg.com/vi/s1AyjcYAxPg/maxresdefault.jpg');
+                background-image: linear-gradient(0deg, #111111dd 0%, #11111150 100%), url('https://i.ytimg.com/vi/9-EgvyLRYo4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAmSaNnJ9OXjNMOhlv_hrouzeDL-A');
                 background-size: cover;
                 background-position: center center;
             }

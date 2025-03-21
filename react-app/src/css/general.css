@@ -188,9 +188,10 @@ aside {
     overflow: hidden;
     z-index: 9999;
 
-    h1 {
+    h2 {
         font-size: 3em;
         font-weight: 200;
+        color: white;
     }
 
     hr {
@@ -329,6 +330,10 @@ header {
 
     &.aside {
         display: block;
+
+        &:hover {
+            color: var(--vermell);
+        }
     }
 }
 

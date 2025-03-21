@@ -28,48 +28,56 @@ function Productes() {
         }
     }
 
-    const num_jocs = jocs.length; // Últim número +1
+    let num_jocs;
+    jocs.forEach(element => {
+        num_jocs++;
+    });
 
     // ADD GAMES
 
     const [list, setList] = useState(null);
 
     useEffect(() => {
-        setList(document.getElementById('product_list'));
-    });
+        const product_list = document.getElementById('product_list');
+        setList(product_list);
+    }, []);
 
     const addGames = () => {
-        console.log(jocs.length);
+        if (list) {
+            console.log(num_jocs);
+            console.log(jocs);
 
-        for (let i = 0; i < num_jocs; i++) {
-            console.log(i);
-            const div = document.createElement('article');
-            const title = document.createElement('p');
-            const p = document.createElement('p');
-            const span = document.createElement('span');
+            for (let i = 0; i < num_jocs; i++) {
+                console.log(i);
+                const div = document.createElement('article');
+                const title = document.createElement('p');
+                const p = document.createElement('p');
+                const span = document.createElement('span');
 
-            div.style.backgroundImage = 'url("' + jocs[i]['src'] + '")';
-            div.setAttribute('decoding', 'async');
-            title.innerText = jocs[i]['name'];
-            p.innerText = jocs[i]['description'];
-            span.innerText = 'close';
+                div.style.backgroundImage = 'url("' + jocs[i]['src'] + '")';
+                div.setAttribute('decoding', 'async');
+                title.innerText = jocs[i]['name'];
+                p.innerText = jocs[i]['description'];
+                span.innerText = 'close';
 
-            div.classList.add(jocs[i]['genere']);
-            div.classList.add(jocs[i]['color']);
-            div.classList.add('product_hover');
-            div.id = i;
-            title.classList.add('title');
-            p.classList.add('description');
-            span.classList.add('material-symbols-outlined');
+                div.classList.add(jocs[i]['genere']);
+                div.classList.add(jocs[i]['color']);
+                div.classList.add('product_hover');
+                div.id = i;
+                title.classList.add('title');
+                p.classList.add('description');
+                span.classList.add('material-symbols-outlined');
 
-            div.appendChild(span);
-            div.appendChild(p);
-            div.appendChild(title);
-            list.appendChild(div);
+                div.appendChild(span);
+                div.appendChild(p);
+                div.appendChild(title);
+                list.appendChild(div);
+            }
         }
     }
 
     // FILTERS
+    // Objectiu, when 0 filtres mostrar tots (mostrar 0 filtres default)
 
     const filterGenere = (name) => {
         for (let i = 0; i < num_jocs; i++) {
@@ -99,7 +107,7 @@ function Productes() {
         const exacte = document.getElementById('input_exacte');
         let i = 0;
 
-        if (name === 'rang' && document.getElementById('rang').checked) {
+        if (name === 'rang' && document.getElementById('rang').default) {
             for (i = 0; i < num_jocs; i++) {
                 if (primer.value <= jocs[i]['any'] && segon.value >= jocs[i]['any']) {
                     document.getElementById(i).classList.remove('hideAny');
@@ -107,7 +115,7 @@ function Productes() {
                     document.getElementById(i).classList.add('hideAny');
                 }
             }
-        } else if (name === 'exacte' && document.getElementById('exacte').checked) {
+        } else if (name === 'exacte' && document.getElementById('exacte').default) {
             for (i = 0; i < num_jocs; i++) {
                 if (exacte.value === jocs[i]['any']) {
                     document.getElementById(i).classList.remove('hideAny');
@@ -177,9 +185,9 @@ function Productes() {
     }
 
     useEffect(() => {
-        //document.getElementById('form').reset();
+        document.getElementById('form').reset();
         addGames();
-    });
+    }, [addGames]);
 
     return (
         <main>
@@ -189,42 +197,42 @@ function Productes() {
                 <div className="genere">
                     <h2>Gènere</h2>
                     <div>
-                        <input type="checkbox" name="genere" id="accio" onChange={filterGenere('accio')} checked />
+                        <input type="checkbox" name="genere" id="accio" onChange={filterGenere('accio')} />
                         <span className="material-symbols-outlined"></span>
                         <label for="accio">Acció</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="genere" id="aventura" onChange={filterGenere('aventura')} checked />
+                        <input type="checkbox" name="genere" id="aventura" onChange={filterGenere('aventura')} />
                         <span></span>
                         <label for="aventura">Aventura</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="genere" id="rpg" onChange={filterGenere('rpg')} checked />
+                        <input type="checkbox" name="genere" id="rpg" onChange={filterGenere('rpg')} />
                         <span></span>
                         <label for="rpg">RPG</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="genere" id="terror" onChange={filterGenere('terror')} checked />
+                        <input type="checkbox" name="genere" id="terror" onChange={filterGenere('terror')} />
                         <span></span>
                         <label for="terror">Terror</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="genere" id="fantasia" onChange={filterGenere('fantasia')} checked />
+                        <input type="checkbox" name="genere" id="fantasia" onChange={filterGenere('fantasia')} />
                         <span></span>
                         <label for="fantasia">Fantasia</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="genere" id="puzzle" onChange={filterGenere('puzzle')} checked />
+                        <input type="checkbox" name="genere" id="puzzle" onChange={filterGenere('puzzle')} />
                         <span></span>
                         <label for="puzzle">Puzzle</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="genere" id="esports" onChange={filterGenere('esports')} checked />
+                        <input type="checkbox" name="genere" id="esports" onChange={filterGenere('esports')} />
                         <span></span>
                         <label for="esports">Esports</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="genere" id="estrategia" onChange={filterGenere('estrategia')} checked />
+                        <input type="checkbox" name="genere" id="estrategia" onChange={filterGenere('estrategia')} />
                         <span></span>
                         <label for="estrategia">Estrategia</label>
                     </div>
@@ -233,7 +241,7 @@ function Productes() {
                     <h2>Any de llençament</h2>
                     <div className="rang">
                         <div>
-                            <input type="radio" name="any" id="rang" onClick={() => filterAny('rang')} checked />
+                            <input type="radio" name="any" id="rang" onClick={() => filterAny('rang')} defaultChecked />
                             <span></span>
                             <label for="rang">Rang d'anys</label>
                         </div>

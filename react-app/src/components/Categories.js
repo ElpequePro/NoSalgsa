@@ -83,30 +83,30 @@ function Categories() {
                         <h3>Recomanat per a tu</h3>
                         <ul>
                             <li>
-                                <img src="https://i.ytimg.com/vi/GC_fXqYXGxM/maxresdefault.jpg" alt="" />
+                                <img src="https://i.ytimg.com/vi/GC_fXqYXGxM/maxresdefault.jpg" alt="Ghost of Yotei" />
                                 <p></p>
                                 <p>69,99 €</p>
                             </li>
                             <li>
                                 <img src="https://m.media-amazon.com/images/M/MV5BNTcyNDliZDMtMjM1My00ZmU1LTgyZTItNWYxODJiY2IxNGExXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
-                                    alt="" />
+                                    alt="Pokémon Legends AZ" />
                                 <p></p>
                                 <p>49,99 €</p>
                             </li>
                             <li>
-                                <img src="https://assets-prd.ignimgs.com/2024/12/13/nightreign-1734052852377.jpg" alt="" />
+                                <img src="https://assets-prd.ignimgs.com/2024/12/13/nightreign-1734052852377.jpg" alt="Elden Ring: Nightreign" />
                                 <p></p>
                                 <p>39,99 €</p>
                             </li>
                             <li>
-                                <img src="https://assets-prd.ignimgs.com/2023/08/24/nightmares3-1692881952367.jpg" alt="" />
+                                <img src="https://assets-prd.ignimgs.com/2023/08/24/nightmares3-1692881952367.jpg" alt="Little Nightmares 3" />
                                 <p></p>
                                 <span>15%</span>
                                 <p>34,99 € <del>39,99 €</del></p>
                             </li>
                             <li>
                                 <img src="https://technoahora.com/wp-content/uploads/2024/12/splitfiction-keyart-rgb-1920x108-1.webp"
-                                    alt="" />
+                                    alt="Split Fiction" />
                                 <p></p>
                                 <span>25%</span>
                                 <p>39,99 € <del>49,99 €</del></p>
@@ -122,32 +122,32 @@ function Categories() {
                         <ul>
                             <li>
                                 <img src="https://assets-prd.ignimgs.com/2022/01/05/witcher-3-wild-hunt-blood-and-wine-button-1641371827864.jpg"
-                                    alt="" loading="lazy" decoding="async" />
+                                    alt="Witcher 3: Wild Hunt Blood and Wine" loading="lazy" decoding="async" />
                                 <p></p>
                                 <p>19,99 €</p>
                             </li>
                             <li>
                                 <img src="https://imagedelivery.net/nkaANmEhdg2ZZ4vhQHp4TQ/97650aa0-85b4-4032-02c2-45097e4f9600/psdbsqlg"
-                                    alt="" style={{ objectPosition: "center 0px" }} />
+                                    alt="The Binding of Isaac: Repentance" style={{ objectPosition: "center 0px" }} />
                                 <p></p>
                                 <span>25%</span>
                                 <p>14,99 € <del>19,99 €</del></p>
                             </li>
                             <li>
-                                <img src="https://i.ytimg.com/vi/cWwwptVbkCo/maxresdefault.jpg" alt="" />
+                                <img src="https://i.ytimg.com/vi/cWwwptVbkCo/maxresdefault.jpg" alt="Elden Ring: Shadow of the Erdtree" />
                                 <p className="img-before">Premium</p>
                                 <span>40%</span>
                                 <p>24,99 € <del>39,99 €</del></p>
                             </li>
                             <li>
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl9D3qFXE0MHLxgcYnu9NlrcP_lGtZA4iJgg&s"
-                                    alt="" style={{ objectPosition: "-20px center" }} />
+                                    alt="Red Dead Redemption: Undead Nightmare" style={{ objectPosition: "-20px center" }} />
                                 <p className="img-before">Extra</p>
                                 <p>14,99 €</p>
                             </li>
                             <li>
                                 <img src="https://mir-s3-cdn-cf.behance.net/projects/404/6e545f180617701.Y3JvcCwxMzY4LDEwNzAsMzI1LDA.jpg"
-                                    alt="" />
+                                    alt="Cyberpunk 2077: Phantom Liberty" />
                                 <p></p>
                                 <span>60%</span>
                                 <p>4,99 € <del>29,99 €</del></p>
@@ -159,30 +159,30 @@ function Categories() {
                         <ul>
                             <li>
                                 <img src="https://www.darkhorsedirect.com/cdn/shop/files/HFW_STATUE_CLAWSTRIDER_DHD_PHOTO_DSP_19.png?v=1708985615&width=480"
-                                    alt="" loading="lazy" decoding="async" />
+                                    alt="Figura d'Aloy muntant un Clawstrider" loading="lazy" decoding="async" />
                                 <p>Horizon</p>
                                 <p>999,99 €</p>
                             </li>
                             <li>
-                                <img src="../img/astro_bot.jpg" alt="" />
+                                <img src="../img/astro_bot.jpg" alt="Figura d'Astro Bot amb una moneda" />
                                 <p>Astro Bot</p>
                                 <span>35%</span>
                                 <p>49,99 € <del>74,99 €</del></p>
                             </li>
                             <li>
-                                <img src="https://m.media-amazon.com/images/I/51+KFU5htoL.jpg" alt="" />
+                                <img src="https://m.media-amazon.com/images/I/51+KFU5htoL.jpg" alt="Figura de Link amb arc" />
                                 <p>The Legend of Zelda</p>
                                 <span>20%</span>
                                 <p>79,99 € <del>99,99 €</del></p>
                             </li>
                             <li>
-                                <img src="../img/el_venoso.jpeg" alt="" />
+                                <img src="../img/el_venoso.jpeg" alt="Figura de Venom contra dos Spider-Man" />
                                 <p>Spider-Man</p>
                                 <p>179,99 €</p>
                             </li>
                             <li>
                                 <img src="https://www.nakamatoys.com/cdn/shop/files/STL316520_5_1024x1024.jpg?v=1707939476"
-                                    alt="" />
+                                    alt="Figura de Caith Sith i Fat Moogle" />
                                 <p>Final Fantasy</p>
                                 <p>129,99 €</p>
                             </li>
@@ -207,34 +207,34 @@ function Categories() {
                         <ul>
                             <li>
                                 <img src="https://preview.redd.it/fc-25-standard-cover-v0-19e17zsww2dd1.jpeg?width=640&crop=smart&auto=webp&s=d9129e6dbe0b8801366f26fc86c85ff228c0649a"
-                                    alt="" style={{ objectPosition: "center -1px" }} loading="lazy" />
+                                    alt="FC25" style={{ objectPosition: "center -1px" }} loading="lazy" />
                                 <p></p>
                                 <span>40%</span>
                                 <p>34,99 € <del>59,99 €</del></p>
                             </li>
                             <li>
                                 <img src="https://preview.redd.it/new-minecraft-art-cover-what-do-you-think-v0-jncj9eqr9bad1.jpeg?auto=webp&s=8ba0359485474ee23ca522d0fdddb59bdec9c250"
-                                    alt="" loading="lazy" />
+                                    alt="Minecraft" loading="lazy" />
                                 <p></p>
                                 <span>50%</span>
                                 <p>14,99 € <del>29,99 €</del></p>
                             </li>
                             <li>
                                 <img src="https://preview.redd.it/bueqtztxmnj81.png?width=640&crop=smart&auto=webp&s=377e0d875affec6537a26c6cc7f4721aebdeaba5"
-                                    alt="" loading="lazy" />
+                                    alt="Elden Ring" loading="lazy" />
                                 <p></p>
                                 <span>50%</span>
                                 <p>29,99 € <del>59,99 €</del></p>
                             </li>
                             <li>
                                 <img src="https://i.redd.it/which-cover-art-do-you-prefer-v0-5jhtn3wyuvcc1.jpg?width=1600&format=pjpg&auto=webp&s=460f23db1c95e60b64070d71000b3c12b3d39ae2"
-                                    alt="" loading="lazy" />
+                                    alt="Red Dead Redemption 2" loading="lazy" />
                                 <p></p>
                                 <span>65%</span>
                                 <p>19,99 € <del>59,99 €</del></p>
                             </li>
                             <li>
-                                <img src="https://m.media-amazon.com/images/I/61ser8y0sNL._AC_UF894,1000_QL80_.jpg" alt=""
+                                <img src="https://m.media-amazon.com/images/I/61ser8y0sNL._AC_UF894,1000_QL80_.jpg" alt="Final Fantasy XIV"
                                     style={{ objectPosition: "center 40%" }} />
                                 <p></p>
                                 <span>25%</span>
@@ -247,32 +247,32 @@ function Categories() {
                         <ul>
                             <li>
                                 <img src="https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/bb8d724c-9aa2-11e6-9b10-00163ec9f5fa/2766737171/gta-v-cover-wallpaper-screenshot.jpg"
-                                    alt="" loading="lazy" />
+                                    alt="Grand Theft Auto V" loading="lazy" />
                                 <p></p>
                                 <p>9,99 €</p>
                             </li>
                             <li>
-                                <img src="https://i1.sndcdn.com/artworks-09oSEwpPeAGtzpoR-pWgblQ-t500x500.jpg" alt="" />
+                                <img src="https://i1.sndcdn.com/artworks-09oSEwpPeAGtzpoR-pWgblQ-t500x500.jpg" alt="It Takes Two" />
                                 <p></p>
                                 <span>75%</span>
                                 <p>9,99 € <del>39,99 €</del></p>
                             </li>
                             <li>
                                 <img src="https://pics.filmaffinity.com/Mortal_Kombat_11_Aftermath-880716075-large.jpg"
-                                    alt="" loading="lazy" />
+                                    alt="Mortal Kombat 11: Aftermath" loading="lazy" />
                                 <p></p>
                                 <span>50%</span>
                                 <p>19,99 € <del>39,99 €</del></p>
                             </li>
                             <li>
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRupQJ8Xa5UfYipl59T_3P-fn_X0RJ9n1_Ax-JS0sVArvoqEGo9CslDOMiWK74K28gH8j8&usqp=CAU"
-                                    alt="" />
+                                    alt="Detroit: Become Human" />
                                 <p></p>
                                 <p>14,99 €</p>
                             </li>
                             <li>
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNDjbfQTQeOJzhcL-OJLocrb__KAWBz4hsMA&s"
-                                    alt="" />
+                                    alt="Crew 2" />
                                 <p></p>
                                 <span>65%</span>
                                 <p>14,99 € <del>49,99 €</del></p>
@@ -284,34 +284,34 @@ function Categories() {
                         <ul>
                             <li>
                                 <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/Assassin%27s_Creed_Valhalla_cover.jpg"
-                                    alt="" style={{ objectPosition: "center 0px" }} />
+                                    alt="Assassins Creed Valhalla" style={{ objectPosition: "center 0px" }} />
                                 <p className="img-before">Extra</p>
                                 <span>65%</span>
                                 <p>19,99 € <del>59,99 €</del></p>
                             </li>
                             <li>
-                                <img src="https://f4.bcbits.com/img/a2686854379_10.jpg" alt="" loading="lazy" />
+                                <img src="https://f4.bcbits.com/img/a2686854379_10.jpg" alt="L.A. Noire" loading="lazy" />
                                 <p></p>
                                 <span>75%</span>
                                 <p>9,99 € <del>39,99 €</del></p>
                             </li>
                             <li>
                                 <img src="https://npr.brightspotcdn.com/ca/d6/3909cdb44357a39822747d905462/far-cry-6-wide-cover.jpeg"
-                                    alt="" loading="lazy" />
+                                    alt="Far Cry 6" loading="lazy" />
                                 <p></p>
                                 <span>50%</span>
                                 <p>14,99 € <del>29,99 €</del></p>
                             </li>
                             <li>
                                 <img src="https://gaming-cdn.com/images/products/7047/orig/red-dead-redemption-pc-game-steam-cover.jpg?v=1730219996"
-                                    alt="" loading="lazy" />
+                                    alt="Red Dead Redemption" loading="lazy" />
                                 <p className="img-before">Extra</p>
                                 <span>50%</span>
                                 <p>24,99 € <del>49,99 €</del></p>
                             </li>
                             <li>
                                 <img src="https://preview.redd.it/what-subnautica-game-is-better-i-prefer-the-first-cause-i-v0-fvyfkaqcd83d1.jpeg?width=640&crop=smart&auto=webp&s=a18924358845b72fb88620459e9da4a0ad04f54a"
-                                    alt="" loading="lazy" />
+                                    alt="Subnautica" loading="lazy" />
                                 <p></p>
                                 <span>60%</span>
                                 <p>11,99 € <del>29,99 €</del></p>
@@ -341,7 +341,7 @@ function Categories() {
                                 <li>Game Help</li>
                                 <li>Share Play</li>
                                 <li className="sub-list-not-checked">Games Catalogue</li>
-                                <li className="sub-list-not-checked">classNameics Catalogue</li>
+                                <li className="sub-list-not-checked">Clàssics Catalogue</li>
                                 <li className="sub-list-not-checked">Game Trials</li>
                                 <li className="sub-list-not-checked">Cloud Streaming</li>
 
@@ -367,7 +367,7 @@ function Categories() {
                                 <li>Cloud Storage</li>
                                 <li>Game Help</li>
                                 <li>Share Play</li>
-                                <li className="sub-list-not-checked">classNameics Catalogue</li>
+                                <li className="sub-list-not-checked">Clàssics Catalogue</li>
                                 <li className="sub-list-not-checked">Game Trials</li>
                                 <li className="sub-list-not-checked">Cloud Streaming</li>
                             </ul>
@@ -384,7 +384,7 @@ function Categories() {
                             </div>
                             <ul>
                                 <li>Games Catalogue</li>
-                                <li>classNameics Catalogue</li>
+                                <li>Clàssics Catalogue</li>
                                 <li>Game Trials</li>
                                 <li>Cloud Streaming</li>
                                 <li>Monthly Games</li>
@@ -400,36 +400,36 @@ function Categories() {
                         </div>
                     </div>
                     <div className="game-list">
-                        <h3>Ubisoft+ classNameics</h3>
+                        <h3>Ubisoft+ Clàssics</h3>
                         <ul>
                             <li>
                                 <img src="https://npr.brightspotcdn.com/ca/d6/3909cdb44357a39822747d905462/far-cry-6-wide-cover.jpeg"
-                                    alt="" loading="lazy" />
+                                    alt="Far Cry 6" loading="lazy" />
                                 <p></p>
                                 <span>50%</span>
                                 <p>14,99 € <del>29,99 €</del></p>
                             </li>
                             <li>
                                 <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/Assassin%27s_Creed_Valhalla_cover.jpg"
-                                    alt="" style={{ objectPosition: "center 0px" }} />
+                                    alt="Assassins Creed Valhalla" style={{ objectPosition: "center 0px" }} />
                                 <p className="img-before">Extra</p>
                                 <span>65%</span>
                                 <p>19,99 € <del>59,99 €</del></p>
                             </li>
                             <li>
-                                <img src="https://upload.wikimedia.org/wikipedia/en/a/af/The_Division_2_art.jpg" alt="" />
+                                <img src="https://upload.wikimedia.org/wikipedia/en/a/af/The_Division_2_art.jpg" alt="The Division 2" />
                                 <p></p>
                                 <p>39,99 €</p>
                             </li>
                             <li>
-                                <img src="https://ggsel.net/_next/image?url=https%3A%2F%2Fimg.ggsel.ru%2F3241827%2Foriginal%2F250x250%2Fp1_3241826_69a530f0.webp&w=640&q=75"
-                                    alt="" loading="lazy" />
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpl3GeJmikHCU0r7TDltjAoDRGxTC4TCMujA&s"
+                                    alt="Prince of Persia: The Last Crown" loading="lazy" />
                                 <p className="img-before">Extra</p>
                                 <p>39,99 €</p>
                             </li>
                             <li>
                                 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Rainbow_Six_Extraction_cover_art.jpg/220px-Rainbow_Six_Extraction_cover_art.jpg"
-                                    alt="" />
+                                    alt="Rainbow Six: Extraction" />
                                 <p className="img-before">Premium</p>
                                 <p>39,99 €</p>
                             </li>
@@ -440,32 +440,32 @@ function Categories() {
                         <ul>
                             <li>
                                 <img src="https://upload.wikimedia.org/wikipedia/en/a/ab/Grand_Theft_Auto_Online.jpg"
-                                    alt="" />
+                                    alt="Grand Theft Auto Online" />
                                 <p></p>
                                 <p>9,99 €</p>
                             </li>
                             <li>
                                 <img src="https://gaming-cdn.com/images/products/7047/orig/red-dead-redemption-pc-game-steam-cover.jpg?v=1730219996"
-                                    alt="" loading="lazy" />
+                                    alt="Red Dead Redemption" loading="lazy" />
                                 <p className="img-before">Extra</p>
                                 <span>50%</span>
                                 <p>24,99 € <del>49,99 €</del></p>
                             </li>
                             <li>
                                 <img src="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/3933o7ko43o839/8ccfba9f8a0406093a2b792fb779e0a3af46f3f8.jpg"
-                                    alt="" loading="lazy" />
+                                    alt="Grand Theft Auto: The Trilogy" loading="lazy" />
                                 <p className="img-before">Extra</p>
                                 <p>19,99 €</p>
                             </li>
                             <li>
-                                <img src="https://f4.bcbits.com/img/a2686854379_10.jpg" alt="" loading="lazy" />
+                                <img src="https://f4.bcbits.com/img/a2686854379_10.jpg" alt="L.A. Noire" loading="lazy" />
                                 <p></p>
                                 <span>75%</span>
                                 <p>9,99 € <del>39,99 €</del></p>
                             </li>
                             <li>
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSUXjkebwcHKY8TajsE3J-MhWE4UhWJ08jqdgjtScD-C2-pdR2d4OcAIkQlamdD1wZXAc&usqp=CAU"
-                                    alt="" />
+                                    alt="Bully" />
                                 <p className="img-before">Extra</p>
                                 <p>14,99 €</p>
                             </li>
@@ -476,23 +476,23 @@ function Categories() {
                         <ul>
                             <li>
                                 <img src="https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2017/06/637533-filtra-bmw-m5-2017-nuevo-need-speed.jpg?tf=3840x"
-                                    alt="" loading="lazy" />
+                                    alt="Need for Speed: Payback" loading="lazy" />
                                 <p></p>
                                 <p>29,99 €</p>
                             </li>
                             <li>
-                                <img src="https://i1.sndcdn.com/artworks-Dq1R04SDRHh9ns1i-ufMlqA-t500x500.jpg" alt="" />
+                                <img src="https://i1.sndcdn.com/artworks-Dq1R04SDRHh9ns1i-ufMlqA-t500x500.jpg" alt="Battlefield 2042" />
                                 <p className="img-before">Extra</p>
                                 <p>59,99 €</p>
                             </li>
                             <li>
                                 <img src="https://i.ytimg.com/vi/TiPeMZsK1rA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB4mYBSnvnwJBXUpJq4mfU8lkOLzg"
-                                    alt="" />
+                                    alt="Star Wars Jedi: Survivor" />
                                 <p className="img-before">Premium</p>
                                 <p>29,99 €</p>
                             </li>
                             <li>
-                                <img src="https://g4meshop.com/wp-content/uploads/2024/08/EASPORTSMaddenNFL25111.jpg" alt=""
+                                <img src="https://g4meshop.com/wp-content/uploads/2024/08/EASPORTSMaddenNFL25111.jpg" alt="Madden NFL 25"
                                     style={{ objectPosition: "-17px center" }} loading="lazy" />
                                 <p></p>
                                 <span>35%</span>
@@ -500,7 +500,7 @@ function Categories() {
                             </li>
                             <li>
                                 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/55/F1_24_cover_art.jpg/220px-F1_24_cover_art.jpg"
-                                    alt="" style={{ objectPosition: "center -12px" }} loading="lazy" />
+                                    alt="F1 24" style={{ objectPosition: "center -12px" }} loading="lazy" />
                                 <p className="img-before">Extra</p>
                                 <p>39,99 €</p>
                             </li>

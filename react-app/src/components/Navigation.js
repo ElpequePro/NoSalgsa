@@ -57,6 +57,14 @@ function Navigation() {
         setDiv(divElement);
         setAside(asideElement);
 
+        searchElement.addEventListener('input', () => {
+            if (searchElement.value !== null || searchElement.value !== '') {
+                localStorage.setItem('query', searchElement.value);
+                localStorage.setItem('load', 'true');
+                navigate('/shop');
+            }
+        });
+        /*
         searchElement.addEventListener('keydown', () => {
             localStorage.setItem('query', searchElement.value);
         });
@@ -67,7 +75,7 @@ function Navigation() {
                 navigate('/shop');
             }
         });
-
+        */
     }, [navigate]);
 
     return (
@@ -75,7 +83,7 @@ function Navigation() {
             <nav>
                 <div>
                     <i className="bi bi-list" onClick={() => menu('open')}></i>
-                    <img src={logo} alt="" onClick={onClickLogo} />
+                    <img src={logo} alt="Logo" onClick={onClickLogo} />
                     <ul>
                         <li><Link className="Link" to='/'>Home</Link></li>
                         <li className="tenda"><Link className="Link" to='/shop'>Tenda</Link> <span
