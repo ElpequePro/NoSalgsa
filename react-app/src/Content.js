@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import Home from './components/Home';
@@ -35,9 +35,18 @@ const Content = ({ routeClass }) => {
             content = <Home />;
     }
 
+    const [darkMode, setDarkMode] = useState(true);
+
+    const toggleMode = () => {
+        setDarkMode(prevMode => !prevMode);
+    }
+
     return (
-        <div className={`main-div ${routeClass}`}>
+        <div className={`main-div ${routeClass} dark-mode-${darkMode}`}>
             {content}
+            {
+                darkMode ? (<span className='material-symbols-outlined dark-mode' onClick={toggleMode}>dark_mode</span>) : (<span className='material-symbols-outlined light-mode' onClick={toggleMode}>light_mode</span>)
+            }
         </div >
     );
 };

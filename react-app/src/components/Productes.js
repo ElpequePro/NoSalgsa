@@ -28,8 +28,6 @@ function Productes() {
         }
     }
 
-    // ADD GAMES
-
     useEffect(() => {
         const fetchJocs = async () => {
             try {

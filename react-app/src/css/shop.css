@@ -329,6 +329,28 @@
     }
 }
 
+/* DARK MODE / LIGHT MODE */
+
+.dark-mode-false.shop {
+
+    form,
+    #product_list {
+        background-color: #ccc !important;
+    }
+
+    input[type="reset"] {
+        color: black !important;
+    }
+
+    article p.title {
+        text-shadow: 0 0 8px black;
+    }
+
+    .product_hover::before {
+        background: linear-gradient(0deg, rgba(17, 17, 17, .5) 0%, rgba(17, 17, 17, .1) 70%) !important;
+    }
+}
+
 /* ALTRES */
 
 /* MEDIA */

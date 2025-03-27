@@ -216,6 +216,30 @@
     }
 }
 
+/* DARK MODE / LIGHT MODE */
+
+.dark-mode-false.about-us {
+
+    header {
+        background-image: linear-gradient(0deg, #aaaaaa99 0%, #aaaaaa22 100%), url('https://i.ytimg.com/vi/s1AyjcYAxPg/maxresdefault.jpg');
+        text-shadow: 0 0 12px #333;
+    }
+
+    .objectius li {
+        background-color: #ccc !important;
+    }
+
+    .video {
+        span, p {
+            color: black;
+        }
+
+        span:hover {
+            color: white;
+        }
+    }
+}
+
 /* ALTRES */
 
 /* MEDIA */

@@ -187,6 +187,65 @@ nav {
     }
 }
 
+/* DARK MODE / LIGHT MODE */
+
+.dark-mode-false.home {
+
+    background-color: #eee;
+    color: black;
+
+    &.home {
+        .floating-div {
+            background-color: #eee !important;
+        }
+
+        .side-img {
+            button {
+                border-color: black !important;
+
+                .Link {
+                    color: black;
+                }
+
+                &:hover {
+                    border-color: var(--vermell) !important;
+
+                    .Link {
+                        color: white;
+                    }
+                }
+            }
+
+            div:nth-child(2) {
+                background-image: linear-gradient(0deg, #eeeeee33 0%, #eeeeee33 100%), url('https://kboosting.com/img/23270/c/campaign-300x300.png');
+            }
+        }
+
+        section.blocks {
+            h2 {
+                text-shadow: 0 0 24px white;
+            }
+
+            p {
+                color: white;
+                text-shadow: 0 0 8px black;
+            }
+
+            div:nth-child(1) {
+                background-image: linear-gradient(0deg, #aaaaaa99 0%, #aaaaaa22 100%), url('https://i.ytimg.com/vi/s1AyjcYAxPg/maxresdefault.jpg');
+            }
+
+            div:nth-child(2) {
+                background-image: linear-gradient(0deg, #aaaaaa99 0%, #aaaaaa22 100%), url('https://i.ytimg.com/vi/9-EgvyLRYo4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAmSaNnJ9OXjNMOhlv_hrouzeDL-A');
+            }
+
+            div:nth-child(3) {
+                background-image: linear-gradient(0deg, #aaaaaa99 0%, #aaaaaa22 100%), url('https://i.pinimg.com/originals/54/6b/a2/546ba29fb6559d4bcd9fbeabada9d9ce.jpg') !important;
+            }
+        }
+    }
+}
+
 /* ALTRES */
 
 /* MEDIA */

@@ -1,0 +1,38 @@
+{
+    "dlc": {},
+    "figures": {},
+    "superventes": {},
+    "menys20": {},
+    "descomptesNadal": {},
+    "Ubisoft Classics": {},
+    "GTA+": {
+        "Grand Theft Auto Online": {
+            "src": "https://upload.wikimedia.org/wikipedia/en/a/ab/Grand_Theft_Auto_Online.jpg",
+            "price": 9.99
+        },
+        "Red Dead Redemption": {
+            "src": "https://gaming-cdn.com/images/products/7047/orig/red-dead-redemption-pc-game-steam-cover.jpg?v=1730219996",
+            "extra": true,
+            "discount": 50,
+            "price": 24.99,
+            "lastPrice": 49.99
+        },
+        "Grand Theft Auto: The Trilogy": {
+            "src": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/3933o7ko43o839/8ccfba9f8a0406093a2b792fb779e0a3af46f3f8.jpg",
+            "extra": true,
+            "price": 19.99
+        },
+        "L.A. Noire": {
+            "src": "https://f4.bcbits.com/img/a2686854379_10.jpg",
+            "discount": 75,
+            "price": 9.99,
+            "lastPrice": 39.99
+        },
+        "Bully": {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSUXjkebwcHKY8TajsE3J-MhWE4UhWJ08jqdgjtScD-C2-pdR2d4OcAIkQlamdD1wZXAc&usqp=CAU",
+            "extra": true,
+            "price": 14.99
+        }
+    },
+    "EA Play": {}
+}

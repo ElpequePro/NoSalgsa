@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 import '../css/categories.css';
 
@@ -10,7 +11,22 @@ function Categories() {
     const [desc, setDesc] = useState(null);
     const [subs, setSubs] = useState(null);
 
+    const [jocs, setJocs] = useState([]);
+
     useEffect(() => {
+        const fetchJocs = async () => {
+            try {
+                const response = await axios.get('http://localhost:3001/categories');
+                const jocsArray = Object.values(response.data);
+                setJocs(jocsArray);
+                console.log(jocsArray[6]);
+            } catch (error) {
+                console.error('Error fetching data: ', error);
+            }
+        }
+
+        fetchJocs();
+
         setNov(document.getElementById('novetats_block'));
         setColl(document.getElementById('colleccions_block'));
         setDesc(document.getElementById('descomptes_block'));
@@ -192,13 +208,13 @@ function Categories() {
                 <section className="descomptes" id="descomptes_block">
                     <h2 style={{ marginBottom: "20px" }}>DESCOMPTES</h2>
                     <div className="desc-top-blocks">
-                        <div onclick="window.location.href='#superventes'">
+                        <div onClick={() => window.location.href = '#superventes'}>
                             <h2>SUPERVENTES</h2>
                         </div>
-                        <div onclick="window.location.href='#menys_vint'">
+                        <div onClick={() => window.location.href = '#menys_vint'}>
                             <h2>MENYS DE 20 €</h2>
                         </div>
-                        <div onclick="window.location.href='#descomptes_nadal'">
+                        <div onClick={() => window.location.href = '#descomptes_nadal'}>
                             <h2>DESCOMPTES DE NADAL</h2>
                         </div>
                     </div>
@@ -438,37 +454,13 @@ function Categories() {
                     <div className="game-list">
                         <h3>GTA+</h3>
                         <ul>
-                            <li>
-                                <img src="https://upload.wikimedia.org/wikipedia/en/a/ab/Grand_Theft_Auto_Online.jpg"
-                                    alt="Grand Theft Auto Online" />
-                                <p></p>
-                                <p>9,99 €</p>
-                            </li>
-                            <li>
-                                <img src="https://gaming-cdn.com/images/products/7047/orig/red-dead-redemption-pc-game-steam-cover.jpg?v=1730219996"
-                                    alt="Red Dead Redemption" loading="lazy" />
-                                <p className="img-before">Extra</p>
-                                <span>50%</span>
-                                <p>24,99 € <del>49,99 €</del></p>
-                            </li>
-                            <li>
-                                <img src="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/3933o7ko43o839/8ccfba9f8a0406093a2b792fb779e0a3af46f3f8.jpg"
-                                    alt="Grand Theft Auto: The Trilogy" loading="lazy" />
-                                <p className="img-before">Extra</p>
-                                <p>19,99 €</p>
-                            </li>
-                            <li>
-                                <img src="https://f4.bcbits.com/img/a2686854379_10.jpg" alt="L.A. Noire" loading="lazy" />
-                                <p></p>
-                                <span>75%</span>
-                                <p>9,99 € <del>39,99 €</del></p>
-                            </li>
-                            <li>
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSUXjkebwcHKY8TajsE3J-MhWE4UhWJ08jqdgjtScD-C2-pdR2d4OcAIkQlamdD1wZXAc&usqp=CAU"
-                                    alt="Bully" />
-                                <p className="img-before">Extra</p>
-                                <p>14,99 €</p>
-                            </li>
+                            {jocs[6] && Object.keys(jocs[6]).map(([name, details]) => (
+                                <li>
+                                    <img src={`url("${details.src}")`} alt={name} loading='lazy' />
+                                    <p className={details.extra ? 'img-before' : null}>{details.extra ? 'Extra' : null}</p>
+                                    <p>{details.price} € {details.lastPrice ? `<del>${details.lastPrice} €</del>` : null}</p>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                     <div className="game-list">
@@ -496,7 +488,7 @@ function Categories() {
                                     style={{ objectPosition: "-17px center" }} loading="lazy" />
                                 <p></p>
                                 <span>35%</span>
-                                <p>24,99 <del>34,99 €</del></p>
+                                <p>24,99 € <del>34,99 €</del></p>
                             </li>
                             <li>
                                 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/55/F1_24_cover_art.jpg/220px-F1_24_cover_art.jpg"

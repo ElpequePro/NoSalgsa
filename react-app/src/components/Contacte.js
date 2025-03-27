@@ -25,23 +25,58 @@ function Contacte() {
                 </div>
                 <form action="request.php" method="get">
                     <div>
-                        <input type="text" name="nom" id="nom" placeholder="*Nom" required />
-                        <input type="text" name="cognom" id="cognom" placeholder="*Cognom/s" required />
+                        <div className="custom-label">
+                            <label for='nom'>Nom</label>
+                            <input type="text" name="nom" id="nom" required placeholder="*Escriu el teu nom" />
+                        </div>
+                        <div className="custom-label">
+                            <label for='cognom'>Cognom</label>
+                            <input type="text" name="cognom" id="cognom" required placeholder="*Escriu el teu cognom" />
+                        </div>
                     </div>
-                    <input type="email" name="email" id="email" placeholder="*Correu electrònic" required />
-                    <input type="tel" name="telefon" id="telefon" placeholder="Número de Telèfon (opcional)" />
-                    <select required>
-                        <option value="" disabled selected>- Selecciona el gènere -</option>
-                        <option value="">prova</option>
-                    </select>
+                    <div className="custom-label">
+                        <label for='email'>Correu electrònic</label>
+                        <input type="email" name="email" id="email" required placeholder="*Escriu el teu correu electrònic" />
+                    </div>
+                    <div className="custom-label">
+                        <label for='telefon'>Número de telèfon</label>
+                        <input type="tel" name="telefon" id="telefon" placeholder="Escriu el teu telèfon" />
+                    </div>
+                    <div className="custom-label">
+                        <label>Selecció del producte</label>
+                        <select required id="genere">
+                            <option value="" hidden selected>- Selecciona la secció -</option>
+                            <optgroup label="Categoria">
+                                <option value="figura">Figura</option>
+                                <option value="subscripcio">Subscripció</option>
+                                <option value="dlc">Contingut complementari</option>
+                            </optgroup>
+                            <optgroup label="Gènere de joc">
+                                <option value="accio">Acció</option>
+                                <option value="aventura">Aventura</option>
+                                <option value="rpg">RPG</option>
+                                <option value="terror">Terror</option>
+                                <option value="fantasia">Fantasia</option>
+                                <option value="puzzle">Puzzle</option>
+                                <option value="esports">Esports</option>
+                                <option value="estrategia">Estrategia</option>
+                            </optgroup>
+                        </select>
+                    </div>
                     <select disabled="disabled">
-                        <option value="" disabled selected>- Selecciona el joc -</option>
+                        <option value="" hidden selected>- Selecciona el producte -</option>
                         <option value="">prova</option>
                     </select>
-                    <input type="number" name="comanda" id="comanda" placeholder="Número de la comanda (opcional)" />
-                    <textarea placeholder="*Missatge" name="missatge" id="missatge" required></textarea>
+                    <div className="custom-label">
+                        <label for='comanda'>Número de la comanda</label>
+                        <input type="number" name="comanda" id="comanda" required placeholder="*Escriu el número de la comanda" />
+                    </div>
+                    <div className="custom-label">
+                        <label for='missatge'>Missatge</label>
+                        <textarea name="missatge" id="missatge" placeholder="Escriu un missatge"></textarea>
+                    </div>
                     <div>
-                        <input type="checkbox" id="privacitat" />
+                        <input type="checkbox" id="privacitat" required />
                         <label for="privacitat">He llegit i accepto la <Link to={"/contact/privacy-policy"}>política de
                             privacitat</Link></label>
                     </div>
