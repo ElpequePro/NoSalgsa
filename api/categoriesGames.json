@@ -1,11 +1,17 @@
 {
-    "dlc": {},
+    "dlc": {
+        "Witcher 3: Wild Hunt Blood and Wine": {},
+        "The Binding of Isaac: Repentance": {},
+        "Elden Ring: Shadow of the Erdtree": {},
+        "Red Dead Redemption: Undead Nightmare": {},
+        "Cyberpunk 2077: Phantom Liberty": {}
+    },
     "figures": {},
     "superventes": {},
     "menys20": {},
-    "descomptesNadal": {},
-    "Ubisoft Classics": {},
-    "GTA+": {
+    "descomptes": {},
+    "ubisoft": {},
+    "gta+": {
         "Grand Theft Auto Online": {
             "src": "https://upload.wikimedia.org/wikipedia/en/a/ab/Grand_Theft_Auto_Online.jpg",
             "price": 9.99
@@ -34,5 +40,5 @@
             "price": 14.99
         }
     },
-    "EA Play": {}
+    "ea_play": {}
 }

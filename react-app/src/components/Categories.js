@@ -19,7 +19,10 @@ function Categories() {
                 const response = await axios.get('http://localhost:3001/categories');
                 const jocsArray = Object.values(response.data);
                 setJocs(jocsArray);
-                console.log(jocsArray[6]);
+
+                for (const gameName in jocsArray[0]) {
+                    console.log(gameName);
+                }
             } catch (error) {
                 console.error('Error fetching data: ', error);
             }

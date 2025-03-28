@@ -375,6 +375,8 @@
     }
 }
 
+/* Posar-ho per default */
+
 @media screen and (max-width: 925px) {
     main {
         padding: 40px 56px;
@@ -387,14 +389,16 @@
         width: 0 !important;
         overflow: hidden;
         height: calc(100vh - (40px*2 + 78px)) !important;
+        box-shadow: 0 0 20px 12px #111;
     }
 
     span.arrow,
     span.cross {
-        display: flex;
+        display: flex !important;
     }
 
     div.product-list {
-        width: 100%;
+        width: 100% !important;
+        margin-left: 20px;
     }
 }

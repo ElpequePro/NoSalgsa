@@ -9,6 +9,8 @@ function Productes() {
     const [jocs, setJocs] = useState([]);
     let [numJocs, setNumJocs] = useState();
 
+    const companyList = Array.from(new Set(jocs.map(joc => joc.company))).sort();
+
     // Search Game
 
     function searchGame() {
@@ -34,6 +36,7 @@ function Productes() {
                 const response = await axios.get('http://localhost:3001/shop');
                 const jocsArray = Object.values(response.data);
                 setJocs(jocsArray);
+                setNumJocs(jocsArray.length);
             } catch (error) {
                 console.error('Error fetching data: ', error);
             }
@@ -47,31 +50,17 @@ function Productes() {
 
     // FILTERS
     // Objectiu, when 0 filtres mostrar tots (mostrar 0 filtres default)
-
     const filterGenere = (name) => {
         for (let i = 0; i < numJocs; i++) {
-            if (name === 'accio') {
-                document.getElementsByClassName('accio')[i].classList.toggle('hideGenere');
-            } else if (name === 'aventura') {
-                document.getElementsByClassName('aventura')[i].classList.toggle('hideGenere');
-            } else if (name === 'rpg') {
-                document.getElementsByClassName('rpg')[i].classList.toggle('hideGenere');
-            } else if (name === 'terror') {
-                document.getElementsByClassName('terror')[i].classList.toggle('hideGenere');
-            } else if (name === 'fantasia') {
-                document.getElementsByClassName('fantasia')[i].classList.toggle('hideGenere');
-            } else if (name === 'puzzle') {
-                document.getElementsByClassName('puzzle')[i].classList.toggle('hideGenere');
-            } else if (name === 'esports') {
-                document.getElementsByClassName('esports')[i].classList.toggle('hideGenere');
-            } else if (name === 'estrategia') {
-                document.getElementsByClassName('estrategia')[i].classList.toggle('hideGenere');
+            if (jocs[i].genre === name) {
+                console.log(jocs[i].name);
+                //list.getElementById(i).classList.toggle('hideGenere');
             }
         }
     }
 
     function filterAny(name) {
-        const primer = document.getElementById('range_min_number');
+        /*const primer = document.getElementById('range_min_number');
         const segon = document.getElementById('range_max_number');
         const exacte = document.getElementById('input_exacte');
         let i = 0;
@@ -92,7 +81,11 @@ function Productes() {
                     document.getElementById(i).classList.add('hideAny');
                 }
             }
-        }
+        }*/
+    }
+
+    function filterCompany(name) {
+
     }
 
     function resetFilter() {
@@ -165,42 +158,42 @@ function Productes() {
                 <div className="genere">
                     <h2>Gènere</h2>
                     <div>
-                        <input type="checkbox" name="genere" id="accio" onChange={filterGenere('accio')} />
+                        <input type="checkbox" name="genere" id="accio" onChange={() => filterGenere('accio')} />
                         <span className="material-symbols-outlined"></span>
                         <label for="accio">Acció</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="genere" id="aventura" onChange={filterGenere('aventura')} />
+                        <input type="checkbox" name="genere" id="aventura" onChange={() => filterGenere('aventura')} />
                         <span></span>
                         <label for="aventura">Aventura</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="genere" id="rpg" onChange={filterGenere('rpg')} />
+                        <input type="checkbox" name="genere" id="rpg" onChange={() => filterGenere('rpg')} />
                         <span></span>
                         <label for="rpg">RPG</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="genere" id="terror" onChange={filterGenere('terror')} />
+                        <input type="checkbox" name="genere" id="terror" onChange={() => filterGenere('terror')} />
                         <span></span>
                         <label for="terror">Terror</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="genere" id="fantasia" onChange={filterGenere('fantasia')} />
+                        <input type="checkbox" name="genere" id="fantasia" onChange={() => filterGenere('fantasia')} />
                         <span></span>
                         <label for="fantasia">Fantasia</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="genere" id="puzzle" onChange={filterGenere('puzzle')} />
+                        <input type="checkbox" name="genere" id="puzzle" onChange={() => filterGenere('puzzle')} />
                         <span></span>
                         <label for="puzzle">Puzzle</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="genere" id="esports" onChange={filterGenere('esports')} />
+                        <input type="checkbox" name="genere" id="esports" onChange={() => filterGenere('esports')} />
                         <span></span>
                         <label for="esports">Esports</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="genere" id="estrategia" onChange={filterGenere('estrategia')} />
+                        <input type="checkbox" name="genere" id="estrategia" onChange={() => filterGenere('estrategia')} />
                         <span></span>
                         <label for="estrategia">Estrategia</label>
                     </div>
@@ -214,14 +207,10 @@ function Productes() {
                             <label for="rang">Rang d'anys</label>
                         </div>
                         <div className="ranges">
-                            <input type="number" name="rang_min" id="range_min_number" min="1950" max="2024" value="1950"
-                                onInput="document.getElementById('range_min').value = this.value; filterAny('rang');" />
-                            <input type="range" name="rang_min" id="range_min" min="1950" max="2024" value="1950"
-                                onInput="document.getElementById('range_min_number').value = this.value" />
-                            <input type="range" name="rang_max" id="range_max" min="1950" max="2024" value="2024"
-                                onInput="document.getElementById('range_max_number').value = this.value" />
-                            <input type="number" name="rang_max" id="range_max_number" min="1950" max="2024" value="2024"
-                                onInput="document.getElementById('range_max').value = this.value; filterAny('rang');" />
+                            <input type="number" name="rang_min" id="range_min_number" min="1950" max="2024" value="1950" />
+                            <input type="range" name="rang_min" id="range_min" min="1950" max="2024" value="1950" />
+                            <input type="range" name="rang_max" id="range_max" min="1950" max="2024" value="2024" />
+                            <input type="number" name="rang_max" id="range_max_number" min="1950" max="2024" value="2024" />
                         </div>
                     </div>
                     <div className="exacte">
@@ -233,6 +222,14 @@ function Productes() {
                         <input type="number" min="1950" max="2024" value="2024" id="input_exacte"
                             onInput={() => filterAny('exacte')} />
                     </div>
+                    <div className='companyia'>
+                        <select>
+                            <option selected>-</option>
+                            {companyList.map(company => (
+                                <option value={company}>{company}</option>
+                            ))}
+                        </select>
+                    </div>
                 </div>
                 <input type="reset" value="Reset" onClick={() => resetFilter()} />
             </form>
@@ -240,7 +237,7 @@ function Productes() {
                 onClick={() => floatingFilter('show')}>chevron_right</span>
             <div className="product-list" id="product_list">
                 {jocs.map((joc, index) => (
-                    <article id={index} className={joc.genere + ' ' + joc.color + ' product_hover'} style={{ backgroundImage: `url("${joc.src}")` }}>
+                    <article id={index} className={joc.genre + ' ' + joc.color + ' product_hover'} style={{ backgroundImage: `url("${joc.src}")` }}>
                         <span className='material-symbols-outlined'>close</span>
                         <p className='description'>{joc.description}</p>
                         <p className='title'>{joc.name}</p>

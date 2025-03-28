@@ -9,7 +9,7 @@ function Contacte() {
             <header>
                 <h1>Contacte</h1>
             </header>
-            <section class="form">
+            <section className="form">
                 <div>
                     <h2>tens alguna pregunta?</h2>
                     <p>Som aquí per ajudar! Ompliu el formulari o poseu-vos en contacte amb nosaltres per correu electrònic
@@ -18,9 +18,9 @@ function Contacte() {
                     <p>Tots reben una resposta personalitzada, així que espereu 24 hores durant l'horari comercial per a una
                         resposta. El nostre horari comercial és de L-V de 9 a.m. a 5 p.m.</p>
                     <ul>
-                        <li><span class="material-symbols-outlined">mail</span>atencio-client@nosalgsa.es</li>
-                        <li><span class="material-symbols-outlined">phone</span>666 09 11 69</li>
-                        <li><span class="material-symbols-outlined">chat</span>Parla amb nosaltres</li>
+                        <li><span className="material-symbols-outlined">mail</span>atencio-client@nosalgsa.es</li>
+                        <li><span className="material-symbols-outlined">phone</span>666 09 11 69</li>
+                        <li><span className="material-symbols-outlined">chat</span>Parla amb nosaltres</li>
                     </ul>
                 </div>
                 <form action="request.php" method="get">

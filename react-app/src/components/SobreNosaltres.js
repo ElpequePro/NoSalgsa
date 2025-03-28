@@ -65,8 +65,8 @@ function SobreNosaltres() {
                 <div className="map">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237816.52593398353!2d-158.1412809933053!3d21.355101124311524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006569de4312db%3A0xd77a90edb572a52d!2sPearl%20Harbor!5e0!3m2!1sen!2ses!4v1732094136226!5m2!1sen!2ses"
-                        width="600" height="450" style={{ border: 0 }} allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        width="600" height="450" style={{ border: 0 }} allowFullScreen="" loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div className="profile">
                     <img src="https://i.imgflip.com/5imrkq.jpg?a480912" alt="Imatge autor" />
@@ -95,15 +95,15 @@ function SobreNosaltres() {
             <section className="video">
                 <h2>Video introducció:</h2>
                 <iframe src="https://www.youtube.com/embed/sF5LYGgKbUA?enablejsapi=1&showinfo=0&controls=0" id="video"
-                    frameborder="0" allowfullscreen></iframe>
+                    frameBorder="0" allowFullScreen></iframe>
                 <div>
-                    <span class="material-symbols-outlined" id="playPause" onclick="playPause()">play_arrow</span>
+                    <span className="material-symbols-outlined" id="playPause" onClick="playPause()">play_arrow</span>
                     <div>
                         <p id='vidTime'>00:00 / 00:00</p>
                         <input type="range" name="" id="vidLength" value="0" min="0" />
                     </div>
                     <div>
-                        <span className="material-symbols-outlined" id="btnVolume" onclick="showVolume()">volume_up</span>
+                        <span className="material-symbols-outlined" id="btnVolume" onClick="showVolume()">volume_up</span>
                         <input type="range" className="hidden" name="" id="inpVolume" value="100" min="0" max="100" />
                     </div>
                 </div>
